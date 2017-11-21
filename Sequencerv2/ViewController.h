@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    // Variables
+    NSInteger trackOneButtonStateArray[0];
+    NSInteger trackTwoButtonStateArray[0];
+    NSInteger trackThreeButtonStateArray[0];
+    NSInteger trackFourButtonStateArray[0];
+    NSInteger trackFiveButtonStateArray[0];
+    NSInteger trackSixButtonStateArray[0];
+}
 
-// Properties
+// Outlets
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeButtons;
@@ -18,13 +26,16 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
 
-// Methods
+// Actions
 - (IBAction)didPressTrackOne:(UIButton *)sender;
 - (IBAction)didPressTrackTwo:(UIButton *)sender;
 - (IBAction)didPressTrackThree:(UIButton *)sender;
 - (IBAction)didPressTrackFour:(UIButton *)sender;
 - (IBAction)didPressTrackFive:(UIButton *)sender;
 - (IBAction)didPressTrackSix:(UIButton *)sender;
+
+// Methods
+- (void) initTrackArrays;
 
 @end
 
