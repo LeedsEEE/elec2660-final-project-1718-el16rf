@@ -10,6 +10,21 @@
 
 @interface ViewController : UIViewController
 
+// Properties
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
+
+// Methods
+- (IBAction)didPressTrackOne:(UIButton *)sender;
+- (IBAction)didPressTrackTwo:(UIButton *)sender;
+- (IBAction)didPressTrackThree:(UIButton *)sender;
+- (IBAction)didPressTrackFour:(UIButton *)sender;
+- (IBAction)didPressTrackFive:(UIButton *)sender;
+- (IBAction)didPressTrackSix:(UIButton *)sender;
 
 @end
 

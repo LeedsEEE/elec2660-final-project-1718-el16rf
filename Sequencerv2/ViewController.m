@@ -26,4 +26,21 @@
 }
 
 
+- (IBAction)didPressTrackOne:(UIButton *)sender {
+}
+
+- (IBAction)didPressTrackTwo:(UIButton *)sender {
+}
+
+- (IBAction)didPressTrackThree:(UIButton *)sender {
+}
+
+- (IBAction)didPressTrackFour:(UIButton *)sender {
+}
+
+- (IBAction)didPressTrackFive:(UIButton *)sender {
+}
+
+- (IBAction)didPressTrackSix:(UIButton *)sender {
+}
 @end
