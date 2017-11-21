@@ -142,4 +142,21 @@
 }
 
 
+- (IBAction)trackOneVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)trackTwoVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)trackThreeVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)trackFourVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)trackFiveVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)trackSixVolumeSlider:(UISlider *)sender {
+}
 @end

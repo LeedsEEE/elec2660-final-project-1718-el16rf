@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
-    // Variables
+    // VARIABLES
+    
+    // Track state arrays
     NSInteger trackOneButtonStateArray[0];
     NSInteger trackTwoButtonStateArray[0];
     NSInteger trackThreeButtonStateArray[0];
@@ -18,7 +20,9 @@
     NSInteger trackSixButtonStateArray[0];
 }
 
-// Outlets
+// OUTLETS
+
+// Track buttons
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeButtons;
@@ -26,7 +30,9 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
 
-// Actions
+// ACTIONS
+
+// Track buttons
 - (IBAction)didPressTrackOne:(UIButton *)sender;
 - (IBAction)didPressTrackTwo:(UIButton *)sender;
 - (IBAction)didPressTrackThree:(UIButton *)sender;
@@ -34,7 +40,15 @@
 - (IBAction)didPressTrackFive:(UIButton *)sender;
 - (IBAction)didPressTrackSix:(UIButton *)sender;
 
-// Methods
+// Track faders
+- (IBAction)trackOneVolumeSlider:(UISlider *)sender;
+- (IBAction)trackTwoVolumeSlider:(UISlider *)sender;
+- (IBAction)trackThreeVolumeSlider:(UISlider *)sender;
+- (IBAction)trackFourVolumeSlider:(UISlider *)sender;
+- (IBAction)trackFiveVolumeSlider:(UISlider *)sender;
+- (IBAction)trackSixVolumeSlider:(UISlider *)sender;
+
+// METHODS
 - (void) initTrackArrays;
 
 @end
