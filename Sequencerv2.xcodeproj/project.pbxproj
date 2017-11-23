@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5D422F1FC743E80028C4DC /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D422E1FC743E80028C4DC /* DataModel.m */; };
 		9F9422EC1FC49B7100CDC201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9422EB1FC49B7100CDC201 /* main.m */; };
 		9F9422EF1FC49B7100CDC201 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9422EE1FC49B7100CDC201 /* AppDelegate.m */; };
 		9F9422F21FC49B7100CDC201 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9422F11FC49B7100CDC201 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F5D422D1FC743E80028C4DC /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		9F5D422E1FC743E80028C4DC /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		9F9422E71FC49B7100CDC201 /* Sequencerv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sequencerv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9422EB1FC49B7100CDC201 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F9422ED1FC49B7100CDC201 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				9F9422ED1FC49B7100CDC201 /* AppDelegate.h */,
 				9F9422EE1FC49B7100CDC201 /* AppDelegate.m */,
+				9F5D422D1FC743E80028C4DC /* DataModel.h */,
+				9F5D422E1FC743E80028C4DC /* DataModel.m */,
 				9F9422F01FC49B7100CDC201 /* ViewController.h */,
 				9F9422F11FC49B7100CDC201 /* ViewController.m */,
 				9F9422F31FC49B7100CDC201 /* Main.storyboard */,
@@ -274,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F9422F21FC49B7100CDC201 /* ViewController.m in Sources */,
+				9F5D422F1FC743E80028C4DC /* DataModel.m in Sources */,
 				9F9422EF1FC49B7100CDC201 /* AppDelegate.m in Sources */,
 				9F9422EC1FC49B7100CDC201 /* main.m in Sources */,
 			);
@@ -507,6 +513,7 @@
 				9F9423161FC49B7100CDC201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F9423171FC49B7100CDC201 /* Build configuration list for PBXNativeTarget "Sequencerv2Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +522,7 @@
 				9F9423191FC49B7100CDC201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F94231A1FC49B7100CDC201 /* Build configuration list for PBXNativeTarget "Sequencerv2UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +531,7 @@
 				9F94231C1FC49B7100CDC201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

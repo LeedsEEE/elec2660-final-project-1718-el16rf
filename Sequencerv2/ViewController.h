@@ -7,20 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataModel.h"
 
-@interface ViewController : UIViewController {
-    // VARIABLES
-    
-    // Track state arrays
-    NSInteger trackOneButtonStateArray[0];
-    NSInteger trackTwoButtonStateArray[0];
-    NSInteger trackThreeButtonStateArray[0];
-    NSInteger trackFourButtonStateArray[0];
-    NSInteger trackFiveButtonStateArray[0];
-    NSInteger trackSixButtonStateArray[0];
-}
+@interface ViewController : UIViewController
 
-// OUTLETS
+////////////////
+// PROPERTIES //
+////////////////
 
 // Track buttons
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
@@ -30,7 +23,17 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
 
-// ACTIONS
+@property DataModel *data;
+@property DataModel *trackOneData;
+@property DataModel *trackTwoData;
+@property DataModel *trackThreeData;
+@property DataModel *trackFourData;
+@property DataModel *trackFiveData;
+@property DataModel *trackSixData;
+
+/////////////
+// METHODS //
+/////////////
 
 // Track buttons
 - (IBAction)didPressTrackOne:(UIButton *)sender;
@@ -47,9 +50,6 @@
 - (IBAction)trackFourVolumeSlider:(UISlider *)sender;
 - (IBAction)trackFiveVolumeSlider:(UISlider *)sender;
 - (IBAction)trackSixVolumeSlider:(UISlider *)sender;
-
-// METHODS
-- (void) initTrackArrays;
 
 @end
 
