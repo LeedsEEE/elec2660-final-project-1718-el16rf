@@ -18,7 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.data initTrackArrays];
+    [self.trackData initTrackArrays];
+    
+    self.trackData = [[DataModel alloc] init];
 }
 
 
@@ -31,115 +33,98 @@
 - (IBAction)didPressTrackOne:(UIButton *)sender {
     NSLog(@"track 1; button %ld", sender.tag);
     
-    self.trackOneData = [[DataModel alloc] init];
-    
     if ([sender isSelected] == FALSE) {
         sender.alpha = 1;
-        self.trackOneData->trackOneButtonStateArray[sender.tag] = 1;
+        self.trackData->trackOneButtonStateArray[sender.tag] = 1;
         sender.selected = TRUE;
     }
     else {
         sender.alpha = 0.5;
-        self.trackOneData->trackOneButtonStateArray[sender.tag] = 0;
+        self.trackData->trackOneButtonStateArray[sender.tag] = 0;
         sender.selected = FALSE;
     }
     
-    NSLog(@"button state set to %ld", self.trackOneData->trackOneButtonStateArray[sender.tag]);
+    NSLog(@"button state set to %ld", self.trackData->trackOneButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackTwo:(UIButton *)sender {
     NSLog(@"track 2; button %ld", sender.tag);
-    
-    self.trackTwoData = [[DataModel alloc] init];
-    
     if ([sender isSelected] == FALSE) {
         sender.alpha = 1;
-        self.trackTwoData->trackTwoButtonStateArray[sender.tag] = 1;
+        self.trackData->trackTwoButtonStateArray[sender.tag] = 1;
         sender.selected = TRUE;
     }
     else {
         sender.alpha = 0.5;
-        self.trackTwoData->trackTwoButtonStateArray[sender.tag] = 0;
+        self.trackData->trackTwoButtonStateArray[sender.tag] = 0;
         sender.selected = FALSE;
     }
     
-    NSLog(@"button state set to %ld", self.trackTwoData->trackTwoButtonStateArray[sender.tag]);
+    NSLog(@"button state set to %ld", self.trackData->trackTwoButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackThree:(UIButton *)sender {
     NSLog(@"track 3; button %ld pressed", sender.tag);
-    
-    self.trackThreeData = [[DataModel alloc] init];
-    
     if ([sender isSelected] == FALSE) {
         sender.alpha = 1;
-        self.trackThreeData->trackThreeButtonStateArray[sender.tag] = 1;
+        self.trackData->trackThreeButtonStateArray[sender.tag] = 1;
         sender.selected = TRUE;
     }
     else {
         sender.alpha = 0.5;
-        self.trackThreeData->trackThreeButtonStateArray[sender.tag] = 0;
+        self.trackData->trackThreeButtonStateArray[sender.tag] = 0;
         sender.selected = FALSE;
     }
     
-    NSLog(@"button state set to %ld", self.trackThreeData->trackThreeButtonStateArray[sender.tag]);
+    NSLog(@"button state set to %ld", self.trackData->trackThreeButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackFour:(UIButton *)sender {
     NSLog(@"track 4; button %ld", sender.tag);
-    
-    self.trackFourData = [[DataModel alloc] init];
-    
     if ([sender isSelected] == FALSE) {
         sender.alpha = 1;
-        self.trackFourData->trackFourButtonStateArray[sender.tag] = 1;
+        self.trackData->trackFourButtonStateArray[sender.tag] = 1;
         sender.selected = TRUE;
     }
     else {
         sender.alpha = 0.5;
-        self.trackFourData->trackFourButtonStateArray[sender.tag] = 0;
+        self.trackData->trackFourButtonStateArray[sender.tag] = 0;
         sender.selected = FALSE;
     }
     
-    NSLog(@"button state set to %ld", self.trackFourData->trackFourButtonStateArray[sender.tag]);
+    NSLog(@"button state set to %ld", self.trackData->trackFourButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackFive:(UIButton *)sender {
     NSLog(@"track 5; button %ld", sender.tag);
-    
-    self.trackFiveData = [[DataModel alloc] init];
-    
     if ([sender isSelected] == FALSE) {
         sender.alpha = 1;
-        self.trackFiveData->trackFiveButtonStateArray[sender.tag] = 1;
+        self.trackData->trackFiveButtonStateArray[sender.tag] = 1;
         sender.selected = TRUE;
     }
     else {
         sender.alpha = 0.5;
-        self.trackFiveData->trackFiveButtonStateArray[sender.tag] = 0;
+        self.trackData->trackFiveButtonStateArray[sender.tag] = 0;
         sender.selected = FALSE;
     }
     
-    NSLog(@"button state set to %ld", self.trackFiveData->trackFiveButtonStateArray[sender.tag]);
+    NSLog(@"button state set to %ld", self.trackData->trackFiveButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackSix:(UIButton *)sender {
     NSLog(@"track 6; button %ld", sender.tag);
-    
-    self.trackSixData = [[DataModel alloc] init];
-    
     if ([sender isSelected] == FALSE) {
         sender.alpha = 1;
-        self.trackSixData->trackSixButtonStateArray[sender.tag] = 1;
+        self.trackData->trackSixButtonStateArray[sender.tag] = 1;
         sender.selected = TRUE;
     }
     else {
         sender.alpha = 0.5;
-        self.trackSixData->trackSixButtonStateArray[sender.tag] = 0;
+        self.trackData->trackSixButtonStateArray[sender.tag] = 0;
         sender.selected = FALSE;
     }
     
-    NSLog(@"button state set to %ld", self.trackSixData->trackSixButtonStateArray[sender.tag]);
+    NSLog(@"button state set to %ld", self.trackData->trackSixButtonStateArray[sender.tag]);
 }
 
 - (IBAction)trackOneVolumeSlider:(UISlider *)sender {

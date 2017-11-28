@@ -23,13 +23,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
 
-@property DataModel *data;
-@property DataModel *trackOneData;
-@property DataModel *trackTwoData;
-@property DataModel *trackThreeData;
-@property DataModel *trackFourData;
-@property DataModel *trackFiveData;
-@property DataModel *trackSixData;
+@property DataModel *trackData;
 
 /////////////
 // METHODS //
