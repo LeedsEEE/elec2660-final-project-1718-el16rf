@@ -16,135 +16,92 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    [self.data initTrackArrays];
-    [self.data initAudioPlayers];
-    
     self.data = [[DataModel alloc] init];
+    [self initTrackArrays];
+    [self.data initAudioPlayers];
+    [self didMoveBPMSlider:self.BPMSlider];
+    self.data.sampleNumber = 0;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)didPressPlay:(id)sender {
+    NSLog(@"play button pressed");
+    self.data.timer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.data.BPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+}
+
+- (IBAction)didMoveBPMSlider:(UISlider *)sender {
+    self.data.BPM = self.BPMSlider.value;
+    NSLog(@"BPM slider moved; BPM = %f", self.data.BPM);
+}
 
 - (IBAction)didPressTrackOne:(UIButton *)sender {
-    NSLog(@"track 1; button %ld", sender.tag);
-    
-    if ([sender isSelected] == FALSE) {
-        sender.alpha = 1;
-        self.data->trackOneButtonStateArray[sender.tag] = 1;
-        sender.selected = TRUE;
-    }
-    else {
-        sender.alpha = 0.5;
-        self.data->trackOneButtonStateArray[sender.tag] = 0;
-        sender.selected = FALSE;
+    if ([sender isSelected]) {                                                                  // if button in the array is selected
+        NSLog(@"track 1; button %ld deselected - state %d", sender.tag, !sender.selected);      // accompanying NSLog message showing which button in the array is deselected
+        sender.alpha = 0.5;                                                                     // button alpha value changed
+        trackOneButtonStateArray[sender.tag] = 0;                                               // 0 written to the array at the index specified by the button tag
+        sender.selected = NO;                                                                   // button bool selected state changed
     }
     
-    NSLog(@"button state set to %ld", self.data->trackOneButtonStateArray[sender.tag]);
+    else {                                                                                      // if button in the array is deselected
+        NSLog(@"track 1; button %ld selected - state %d", sender.tag, !sender.selected);        // accompanying NSLog message showing which button in the array is selected
+        sender.alpha = 1;                                                                       // button alpha value changed
+        trackOneButtonStateArray[sender.tag] = 1;                                               // 1 written to the array at the index specified by the button tag
+        sender.selected = YES;                                                                  // button bool selected state changed
+    }
 }
 
 - (IBAction)didPressTrackTwo:(UIButton *)sender {
-    NSLog(@"track 2; button %ld", sender.tag);
-    if ([sender isSelected] == FALSE) {
-        sender.alpha = 1;
-        self.data->trackTwoButtonStateArray[sender.tag] = 1;
-        sender.selected = TRUE;
-    }
-    else {
-        sender.alpha = 0.5;
-        self.data->trackTwoButtonStateArray[sender.tag] = 0;
-        sender.selected = FALSE;
-    }
-    
-    NSLog(@"button state set to %ld", self.data->trackTwoButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackThree:(UIButton *)sender {
-    NSLog(@"track 3; button %ld pressed", sender.tag);
-    if ([sender isSelected] == FALSE) {
-        sender.alpha = 1;
-        self.data->trackThreeButtonStateArray[sender.tag] = 1;
-        sender.selected = TRUE;
-    }
-    else {
-        sender.alpha = 0.5;
-        self.data->trackThreeButtonStateArray[sender.tag] = 0;
-        sender.selected = FALSE;
-    }
-    
-    NSLog(@"button state set to %ld", self.data->trackThreeButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackFour:(UIButton *)sender {
-    NSLog(@"track 4; button %ld", sender.tag);
-    if ([sender isSelected] == FALSE) {
-        sender.alpha = 1;
-        self.data->trackFourButtonStateArray[sender.tag] = 1;
-        sender.selected = TRUE;
-    }
-    else {
-        sender.alpha = 0.5;
-        self.data->trackFourButtonStateArray[sender.tag] = 0;
-        sender.selected = FALSE;
-    }
-    
-    NSLog(@"button state set to %ld", self.data->trackFourButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackFive:(UIButton *)sender {
-    NSLog(@"track 5; button %ld", sender.tag);
-    if ([sender isSelected] == FALSE) {
-        sender.alpha = 1;
-        self.data->trackFiveButtonStateArray[sender.tag] = 1;
-        sender.selected = TRUE;
-    }
-    else {
-        sender.alpha = 0.5;
-        self.data->trackFiveButtonStateArray[sender.tag] = 0;
-        sender.selected = FALSE;
-    }
-    
-    NSLog(@"button state set to %ld", self.data->trackFiveButtonStateArray[sender.tag]);
 }
 
 - (IBAction)didPressTrackSix:(UIButton *)sender {
-    NSLog(@"track 6; button %ld", sender.tag);
-    if ([sender isSelected] == FALSE) {
-        sender.alpha = 1;
-        self.data->trackSixButtonStateArray[sender.tag] = 1;
-        sender.selected = TRUE;
+}
+
+- (void) initTrackArrays {
+    NSLog(@"initialising track arrays...");
+    for (int i = 0; i < 16; i++) {
+        trackOneButtonStateArray[i] = 0;
+        trackTwoButtonStateArray[i] = 0;
+        trackThreeButtonStateArray[i] = 0;
+        trackFourButtonStateArray[i] = 0;
+        trackFiveButtonStateArray[i] = 0;
+        trackSixButtonStateArray[i] = 0;
     }
-    else {
-        sender.alpha = 0.5;
-        self.data->trackSixButtonStateArray[sender.tag] = 0;
-        sender.selected = FALSE;
-    }
+}
+
+- (void) timerFire: (NSTimer *)timer {
+    NSLog(@"timer fired; sample %ld", self.data.sampleNumber);
+    self.data.playing = YES;
     
-    NSLog(@"button state set to %ld", self.data->trackSixButtonStateArray[sender.tag]);
-}
-
-- (IBAction)trackOneVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)trackTwoVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)trackThreeVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)trackFourVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)trackFiveVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)trackSixVolumeSlider:(UISlider *)sender {
+    /*if (self.data->trackOneButtonStateArray[self.data.sampleNumber] == 1) {
+        if ([self.data.trackOne isPlaying]) {
+            [self.data.trackOne stop];
+            self.data.trackOne.currentTime = 0.0;
+        }
+        
+        [self.data.trackOne play];
+    }*/
+    
+    self.data.sampleNumber++;
+    
+    if (self.data.sampleNumber > 15) {
+        self.data.sampleNumber = 0;
+    }
 }
 
 @end
+
+// 32:04 VIDEO
 

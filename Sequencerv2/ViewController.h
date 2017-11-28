@@ -9,11 +9,30 @@
 #import <UIKit/UIKit.h>
 #import "DataModel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    
+    ///////////////
+    // VARIABLES //
+    ///////////////
+    
+    // Track state arrays
+    NSInteger trackOneButtonStateArray[16];
+    NSInteger trackTwoButtonStateArray[16];
+    NSInteger trackThreeButtonStateArray[16];
+    NSInteger trackFourButtonStateArray[16];
+    NSInteger trackFiveButtonStateArray[16];
+    NSInteger trackSixButtonStateArray[16];
+}
 
 ////////////////
 // PROPERTIES //
 ////////////////
+
+// Object definitions
+@property DataModel *data;
+
+// Global controls
+@property (weak, nonatomic) IBOutlet UISlider *BPMSlider;
 
 // Track buttons
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
@@ -23,11 +42,13 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
 
-@property DataModel *data;
-
 /////////////
 // METHODS //
 /////////////
+
+// Global controls
+- (IBAction)didPressPlay:(id)sender;
+- (IBAction)didMoveBPMSlider:(UISlider *)sender;
 
 // Track buttons
 - (IBAction)didPressTrackOne:(UIButton *)sender;
@@ -38,12 +59,10 @@
 - (IBAction)didPressTrackSix:(UIButton *)sender;
 
 // Track faders
-- (IBAction)trackOneVolumeSlider:(UISlider *)sender;
-- (IBAction)trackTwoVolumeSlider:(UISlider *)sender;
-- (IBAction)trackThreeVolumeSlider:(UISlider *)sender;
-- (IBAction)trackFourVolumeSlider:(UISlider *)sender;
-- (IBAction)trackFiveVolumeSlider:(UISlider *)sender;
-- (IBAction)trackSixVolumeSlider:(UISlider *)sender;
+
+
+
+- (void) initTrackArrays;
 
 @end
 

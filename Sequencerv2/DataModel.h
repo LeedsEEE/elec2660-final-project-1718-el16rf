@@ -9,26 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface DataModel : NSObject {
-    
-    ///////////////
-    // VARIABLES //
-    ///////////////
-    
-    @public
-    
-    // Track state arrays
-    NSInteger trackOneButtonStateArray[0];
-    NSInteger trackTwoButtonStateArray[0];
-    NSInteger trackThreeButtonStateArray[0];
-    NSInteger trackFourButtonStateArray[0];
-    NSInteger trackFiveButtonStateArray[0];
-    NSInteger trackSixButtonStateArray[0];
-}
+@interface DataModel : NSObject
 
 ////////////////
 // PROPERTIES //
 ////////////////
+
+// Global
+@property float BPM;
+@property (strong, nonatomic) NSTimer *timer;
+@property NSInteger sampleNumber;
+@property BOOL playing;
 
 // Track audio players
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
@@ -42,7 +33,6 @@
 // METHODS //
 /////////////
 
-- (void) initTrackArrays;
 - (void) initAudioPlayers;
 
 @end
