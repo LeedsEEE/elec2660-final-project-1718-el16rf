@@ -31,17 +31,18 @@
 ////////////////
 
 // Track audio players
-@property(strong, nonatomic) AVAudioPlayer *trackOne;
-@property(strong, nonatomic) AVAudioPlayer *trackTwo;
-@property(strong, nonatomic) AVAudioPlayer *trackThree;
-@property(strong, nonatomic) AVAudioPlayer *trackFour;
-@property(strong, nonatomic) AVAudioPlayer *trackFive;
-@property(strong, nonatomic) AVAudioPlayer *trackSix;
+@property (strong, nonatomic) AVAudioPlayer *trackOne;
+@property (strong, nonatomic) AVAudioPlayer *trackTwo;
+@property (strong, nonatomic) AVAudioPlayer *trackThree;
+@property (strong, nonatomic) AVAudioPlayer *trackFour;
+@property (strong, nonatomic) AVAudioPlayer *trackFive;
+@property (strong, nonatomic) AVAudioPlayer *trackSix;
 
 /////////////
 // METHODS //
 /////////////
 
 - (void) initTrackArrays;
+- (void) initAudioPlayers;
 
 @end
