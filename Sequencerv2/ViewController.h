@@ -61,8 +61,5 @@
 // Track faders
 
 
-
-- (void) initTrackArrays;
-
 @end
 

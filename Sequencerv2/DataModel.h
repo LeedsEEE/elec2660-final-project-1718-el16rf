@@ -33,6 +33,6 @@
 // METHODS //
 /////////////
 
-- (void) initAudioPlayers;
+-(void) initAudioPlayers;
 
 @end

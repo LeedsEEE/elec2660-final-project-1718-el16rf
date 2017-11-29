@@ -10,7 +10,7 @@
 
 @implementation DataModel
 
-- (void) initAudioPlayers {
+-(void) initAudioPlayers {
     NSLog(@"initialising audio players...");
     
     // Track one
