@@ -278,6 +278,29 @@
     }
 }
 
+- (IBAction)didMoveTrackOneVolumeSlider:(UISlider *)sender {
+    self.data.trackOne.volume = self.trackOneVolumeSlider.value;
+}
+
+- (IBAction)didMoveTrackTwoVolumeSlider:(UISlider *)sender {
+    self.data.trackTwo.volume = self.trackTwoVolumeSlider.value;
+}
+
+- (IBAction)didMoveTrackThreeVolumeSlider:(UISlider *)sender {
+    self.data.trackThree.volume = self.trackThreeVolumeSlider.value;
+}
+
+- (IBAction)didMoveTrackFourVolumeSlider:(UISlider *)sender {
+    self.data.trackFour.volume = self.trackFourVolumeSlider.value;
+}
+
+- (IBAction)didMoveTrackFiveVolumeSlider:(UISlider *)sender {
+    self.data.trackFive.volume = self.trackFiveVolumeSlider.value;
+}
+
+- (IBAction)didMoveTrackSixVolumeSlider:(UISlider *)sender {
+    self.data.trackSix.volume = self.trackSixVolumeSlider.value;
+}
 
 - (IBAction)didToggleTrackOne:(UISwitch *)sender {
     if ([sender isOn]) {
@@ -337,24 +360,6 @@
     else {
         self.data.trackSix.volume = 0.0;
     }
-}
-
-- (IBAction)didMoveTrackOneVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)didMoveTrackTwoVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)didMoveTrackThreeVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)didMoveTrackFourVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)didMoveTrackFiveVolumeSlider:(UISlider *)sender {
-}
-
-- (IBAction)didMoveTrackSixVolumeSlider:(UISlider *)sender {
 }
 
 -(void) initTrackArrays {
