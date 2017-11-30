@@ -38,13 +38,13 @@
     [self.trackFour prepareToPlay];
     
     // Track five
-    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"b-2" ofType:@"wav"];
+    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"c2" ofType:@"wav"];
     NSURL *trackFiveFileURL = [[NSURL alloc] initFileURLWithPath:trackFiveFilePath];
     self.trackFive = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFiveFileURL error:nil];
     [self.trackFive prepareToPlay];
     
     // Track six
-    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"b-2" ofType:@"wav"];
+    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"e2" ofType:@"wav"];
     NSURL *trackSixFileURL = [[NSURL alloc] initFileURLWithPath:trackSixFilePath];
     self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
     [self.trackSix prepareToPlay];
