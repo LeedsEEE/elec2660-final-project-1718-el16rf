@@ -18,6 +18,36 @@
     NSURL *trackOneFileURL = [[NSURL alloc] initFileURLWithPath:trackOneFilePath];
     self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:trackOneFileURL error:nil];
     [self.trackOne prepareToPlay];
+    
+    // Track two
+    NSString *trackTwoFilePath = [[NSBundle mainBundle] pathForResource:@"e1" ofType:@"wav"];
+    NSURL *trackTwoFileURL = [[NSURL alloc] initFileURLWithPath:trackTwoFilePath];
+    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:trackTwoFileURL error:nil];
+    [self.trackTwo prepareToPlay];
+    
+    // Track three
+    NSString *trackThreeFilePath = [[NSBundle mainBundle] pathForResource:@"g1" ofType:@"wav"];
+    NSURL *trackThreeFileURL = [[NSURL alloc] initFileURLWithPath:trackThreeFilePath];
+    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:trackThreeFileURL error:nil];
+    [self.trackThree prepareToPlay];
+    
+    // Track four
+    NSString *trackFourFilePath = [[NSBundle mainBundle] pathForResource:@"b-2" ofType:@"wav"];
+    NSURL *trackFourFileURL = [[NSURL alloc] initFileURLWithPath:trackFourFilePath];
+    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFourFileURL error:nil];
+    [self.trackFour prepareToPlay];
+    
+    // Track five
+    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"b-2" ofType:@"wav"];
+    NSURL *trackFiveFileURL = [[NSURL alloc] initFileURLWithPath:trackFiveFilePath];
+    self.trackFive = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFiveFileURL error:nil];
+    [self.trackFive prepareToPlay];
+    
+    // Track six
+    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"b-2" ofType:@"wav"];
+    NSURL *trackSixFileURL = [[NSURL alloc] initFileURLWithPath:trackSixFilePath];
+    self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
+    [self.trackSix prepareToPlay];
 }
 
 @end

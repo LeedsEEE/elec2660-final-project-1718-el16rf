@@ -22,6 +22,9 @@
     [self didMoveBPMSlider:self.BPMSlider];
     self.data.sampleNumber = 0;
     [self initButtons];
+    self.playButton.enabled = YES;
+    self.pauseButton.enabled = NO;
+    self.stopButton.enabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,8 +34,48 @@
 
 - (IBAction)didPressPlay:(id)sender {
     NSLog(@"play button pressed");
+    
+    self.data.playing = YES;
     self.data.timer = [NSTimer scheduledTimerWithTimeInterval:30.0/self.data.BPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    
     ((UIButton *)sender).enabled = NO;
+    self.pauseButton.enabled = YES;
+    self.stopButton.enabled = YES;
+}
+
+- (IBAction)didPressPause:(id)sender {
+    NSLog(@"pause button pressed");
+    
+    self.data.playing = NO;
+    [self.data.timer invalidate];
+    [self.data.trackOne stop];
+    self.data.trackOne.currentTime = 0.0;
+    [self.data.trackOne prepareToPlay];
+    
+    ((UIButton *)sender).enabled = NO;
+    self.playButton.enabled = YES;
+    self.stopButton.enabled = YES;
+}
+
+- (IBAction)didPressStop:(id)sender {
+    NSLog(@"stop button pressed");
+    
+    self.data.playing = NO;
+    [self.data.timer invalidate];
+    [self.data.trackOne stop];
+    self.data.trackOne.currentTime = 0.0;
+    [self.data.trackOne prepareToPlay];
+    
+    ((UIButton *)sender).enabled = NO;
+    self.playButton.enabled = YES;
+    self.pauseButton.enabled = NO;
+    
+    self.data.sampleNumber = 0;
+    
+    for (UIButton *button in self.trackOneButtons) {
+        button.alpha = 0.5;                                             // adjust alpha
+        button.layer.borderWidth = 0.0;                                 // remove border
+    }
 }
 
 - (IBAction)didMoveBPMSlider:(UISlider *)sender {
@@ -113,7 +156,6 @@
         [self.data.trackOne play];                                  // play sample
     }
     
-    self.data.playing = YES;
     self.data.sampleNumber++;
     
     if (self.data.sampleNumber > 15) {

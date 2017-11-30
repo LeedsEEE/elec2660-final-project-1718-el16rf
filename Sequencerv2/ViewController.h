@@ -32,6 +32,9 @@
 @property DataModel *data;
 
 // Global controls
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *pauseButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
 @property (weak, nonatomic) IBOutlet UISlider *BPMSlider;
 
 // Track buttons
@@ -48,6 +51,8 @@
 
 // Global controls
 - (IBAction)didPressPlay:(id)sender;
+- (IBAction)didPressPause:(id)sender;
+- (IBAction)didPressStop:(id)sender;
 - (IBAction)didMoveBPMSlider:(UISlider *)sender;
 
 // Track buttons

@@ -129,7 +129,6 @@
 		9F9422E91FC49B7100CDC201 /* Sequencerv2 */ = {
 			isa = PBXGroup;
 			children = (
-				9F2A3CB91FCD81FD001683C1 /* Audio Samples */,
 				9F9422ED1FC49B7100CDC201 /* AppDelegate.h */,
 				9F9422EE1FC49B7100CDC201 /* AppDelegate.m */,
 				9F5D422D1FC743E80028C4DC /* DataModel.h */,
@@ -140,6 +139,7 @@
 				9F9422F31FC49B7100CDC201 /* Main.storyboard */,
 				9F9422F61FC49B7100CDC201 /* Assets.xcassets */,
 				9F9422FB1FC49B7100CDC201 /* Info.plist */,
+				9F2A3CB91FCD81FD001683C1 /* Audio Samples */,
 				9F9422EA1FC49B7100CDC201 /* Supporting Files */,
 			);
 			path = Sequencerv2;
