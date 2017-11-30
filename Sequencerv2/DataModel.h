@@ -16,7 +16,7 @@
 ////////////////
 
 // Global
-@property float BPM;
+@property int BPM;
 @property (strong, nonatomic) NSTimer *timer;
 @property NSInteger sampleNumber;
 @property BOOL playing;

@@ -45,6 +45,14 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveButtons;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixButtons;
 
+// Track faders
+@property (weak, nonatomic) IBOutlet UISlider *trackOneVolumeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *trackTwoVolumeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *trackThreeVolumeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *trackFourVolumeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *trackFiveVolumeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *trackSixVolumeSlider;
+
 /////////////
 // METHODS //
 /////////////
@@ -54,6 +62,8 @@
 - (IBAction)didPressPause:(id)sender;
 - (IBAction)didPressStop:(id)sender;
 - (IBAction)didMoveBPMSlider:(UISlider *)sender;
+- (IBAction)didPressBPMDecrement:(id)sender;
+- (IBAction)didPressBPMIncrement:(id)sender;
 
 // Track buttons
 - (IBAction)didPressTrackOne:(UIButton *)sender;
@@ -64,6 +74,20 @@
 - (IBAction)didPressTrackSix:(UIButton *)sender;
 
 // Track faders
+- (IBAction)didMoveTrackOneVolumeSlider:(UISlider *)sender;
+- (IBAction)didMoveTrackTwoVolumeSlider:(UISlider *)sender;
+- (IBAction)didMoveTrackThreeVolumeSlider:(UISlider *)sender;
+- (IBAction)didMoveTrackFourVolumeSlider:(UISlider *)sender;
+- (IBAction)didMoveTrackFiveVolumeSlider:(UISlider *)sender;
+- (IBAction)didMoveTrackSixVolumeSlider:(UISlider *)sender;
+
+// Track toggles
+- (IBAction)didToggleTrackOne:(UISwitch *)sender;
+- (IBAction)didToggleTrackTwo:(UISwitch *)sender;
+- (IBAction)didToggleTrackThree:(UISwitch *)sender;
+- (IBAction)didToggleTrackFour:(UISwitch *)sender;
+- (IBAction)didToggleTrackFive:(UISwitch *)sender;
+- (IBAction)didToggleTrackSix:(UISwitch *)sender;
 
 
 @end

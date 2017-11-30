@@ -115,34 +115,33 @@
     self.data.sampleNumber = 0;
     
     for (UIButton *button in self.trackOneButtons) {
-        button.alpha = 0.5;                                             // adjust alpha
-        button.layer.borderWidth = 0.0;                                 // remove border
+        button.alpha = 0.5;
     }
     
     for (UIButton *button in self.trackTwoButtons) {
         button.alpha = 0.5;
-        button.layer.borderWidth = 0.0;
     }
     
     for (UIButton *button in self.trackThreeButtons) {
-        button.alpha = 0.5;                                             // adjust alpha
-        button.layer.borderWidth = 0.0;                                 // remove border
+        button.alpha = 0.5;
     }
     
     for (UIButton *button in self.trackFourButtons) {
-        button.alpha = 0.5;                                             // adjust alpha
-        button.layer.borderWidth = 0.0;                                 // remove border
+        button.alpha = 0.5;
     }
     
-    for (UIButton *button in self.trackThreeButtons) {
-        button.alpha = 0.5;                                             // adjust alpha
-        button.layer.borderWidth = 0.0;                                 // remove border
+    for (UIButton *button in self.trackFiveButtons) {
+        button.alpha = 0.5;
+    }
+    
+    for (UIButton *button in self.trackSixButtons) {
+        button.alpha = 0.5;                                         
     }
 }
 
 - (IBAction)didMoveBPMSlider:(UISlider *)sender {
     self.data.BPM = self.BPMSlider.value;
-    NSLog(@"BPM slider moved; BPM = %f", self.data.BPM);
+    NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
     
     if (self.data.playing == YES) {     // if currently playing
         [self.data.timer invalidate];
@@ -150,20 +149,47 @@
     }
 }
 
+- (IBAction)didPressBPMDecrement:(id)sender {
+    self.data.BPM--;
+    self.BPMSlider.value--;
+    NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
+    
+    if (self.data.playing == YES) {
+        [self.data.timer invalidate];
+        [self didPressPlay:nil];
+    }
+}
+
+- (IBAction)didPressBPMIncrement:(id)sender {
+    self.data.BPM++;
+    self.BPMSlider.value++;
+    NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
+    
+    if (self.data.playing == YES) {
+        [self.data.timer invalidate];
+        [self didPressPlay:nil];
+    }
+}
+
 // track 1
 - (IBAction)didPressTrackOne:(UIButton *)sender {
-    if ([sender isSelected]) {                                                                                      // if button in the array is selected
-        NSLog(@"track 1; button %ld selected - state %d", sender.tag, sender.selected);                             // accompanying NSLog message showing which button in the array is deselected
-        trackOneButtonStateArray[sender.tag] = 1;                                                                   // 0 written to the array at the index specified by the button tag
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;     // colour background
-        sender.selected = NO;                                                                                       // button bool selected state changed
+    // if button in the array is selected
+    if ([sender isSelected]) {
+        // accompanying NSLog message showing which button in the array is deselected
+        NSLog(@"track 1; button %ld selected - state %d", sender.tag, sender.selected);
+        // 1 written to the array at the index specified by the button tag
+        trackOneButtonStateArray[sender.tag] = 1;
+        // colour background
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        // button bool selected state changed
+        sender.selected = NO;
     }
     
-    else {                                                                                  // if previous statement conditions are not met
-        NSLog(@"track 1; button %ld deselected - state %d", sender.tag, sender.selected);   // accompanying NSLog message showing which button in the array is selected
-        trackOneButtonStateArray[sender.tag] = 0;                                           // 1 written to the array at the index specified by the button tag
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;                    // colour background
-        sender.selected = YES;                                                              // button bool selected state changed
+    else {
+        NSLog(@"track 1; button %ld deselected - state %d", sender.tag, sender.selected);
+        trackOneButtonStateArray[sender.tag] = 0;
+        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.selected = YES;
     }
 }
 
@@ -252,6 +278,85 @@
     }
 }
 
+
+- (IBAction)didToggleTrackOne:(UISwitch *)sender {
+    if ([sender isOn]) {
+        self.data.trackOne.volume = self.trackOneVolumeSlider.value;
+    }
+    
+    else {
+        self.data.trackOne.volume = 0.0;
+    }
+}
+
+- (IBAction)didToggleTrackTwo:(UISwitch *)sender {
+    if ([sender isOn]) {
+        self.data.trackTwo.volume = self.trackTwoVolumeSlider.value;
+    }
+    
+    else {
+        self.data.trackTwo.volume = 0.0;
+    }
+}
+
+- (IBAction)didToggleTrackThree:(UISwitch *)sender {
+    if ([sender isOn]) {
+        self.data.trackThree.volume = self.trackThreeVolumeSlider.value;
+    }
+    
+    else {
+        self.data.trackThree.volume = 0.0;
+    }
+}
+
+- (IBAction)didToggleTrackFour:(UISwitch *)sender {
+    if ([sender isOn]) {
+        self.data.trackFour.volume = self.trackFourVolumeSlider.value;
+    }
+    
+    else {
+        self.data.trackFour.volume = 0.0;
+    }
+}
+
+- (IBAction)didToggleTrackFive:(UISwitch *)sender {
+    if ([sender isOn]) {
+        self.data.trackFive.volume = self.trackFiveVolumeSlider.value;
+    }
+    
+    else {
+        self.data.trackFive.volume = 0.0;
+    }
+}
+
+- (IBAction)didToggleTrackSix:(UISwitch *)sender {
+    if ([sender isOn]) {
+        self.data.trackSix.volume = self.trackSixVolumeSlider.value;
+    }
+    
+    else {
+        self.data.trackSix.volume = 0.0;
+    }
+}
+
+- (IBAction)didMoveTrackOneVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)didMoveTrackTwoVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)didMoveTrackThreeVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)didMoveTrackFourVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)didMoveTrackFiveVolumeSlider:(UISlider *)sender {
+}
+
+- (IBAction)didMoveTrackSixVolumeSlider:(UISlider *)sender {
+}
+
 -(void) initTrackArrays {
     NSLog(@"initialising track arrays...");
     
@@ -269,90 +374,81 @@
     NSLog(@"timer fired; sample %ld", self.data.sampleNumber);
     
     for (UIButton *button in self.trackOneButtons) {
-        if (button.tag == self.data.sampleNumber) {                         // if current sample is the same as the button tag
-            button.alpha = 1.0;                                             // adjust alpha
-            button.layer.borderWidth = 2.0;                                 // add border
-            button.layer.borderColor = [UIColor darkGrayColor].CGColor;     // colour border
+        // if current sample is the same as the button tag
+        if (button.tag == self.data.sampleNumber) {
+            // adjust alpha
+            button.alpha = 1.0;
         }
         
-        else {                                  // if previous statement conditions are not met
-            button.alpha = 0.5;                 // adjust alpha
-            button.layer.borderWidth = 0.0;     // remove border
+        // if previous statement conditions are not met
+        else {
+            // adjust alpha
+            button.alpha = 0.5;
         }
     }
     
     for (UIButton *button in self.trackTwoButtons) {
         if (button.tag == self.data.sampleNumber) {
             button.alpha = 1.0;
-            button.layer.borderWidth = 2.0;
-            button.layer.borderColor = [UIColor darkGrayColor].CGColor;
         }
         
         else {
             button.alpha = 0.5;
-            button.layer.borderWidth = 0.0;
         }
     }
     
     for (UIButton *button in self.trackThreeButtons) {
         if (button.tag == self.data.sampleNumber) {
             button.alpha = 1.0;
-            button.layer.borderWidth = 2.0;
-            button.layer.borderColor = [UIColor darkGrayColor].CGColor;
         }
         
         else {
             button.alpha = 0.5;
-            button.layer.borderWidth = 0.0;
         }
     }
     
     for (UIButton *button in self.trackFourButtons) {
         if (button.tag == self.data.sampleNumber) {
             button.alpha = 1.0;
-            button.layer.borderWidth = 2.0;
-            button.layer.borderColor = [UIColor darkGrayColor].CGColor;
         }
         
         else {
             button.alpha = 0.5;
-            button.layer.borderWidth = 0.0;
         }
     }
     
     for (UIButton *button in self.trackFiveButtons) {
         if (button.tag == self.data.sampleNumber) {
             button.alpha = 1.0;
-            button.layer.borderWidth = 2.0;
-            button.layer.borderColor = [UIColor darkGrayColor].CGColor;
         }
         
         else {
             button.alpha = 0.5;
-            button.layer.borderWidth = 0.0;
         }
     }
     
     for (UIButton *button in self.trackSixButtons) {
         if (button.tag == self.data.sampleNumber) {
             button.alpha = 1.0;
-            button.layer.borderWidth = 2.0;
-            button.layer.borderColor = [UIColor darkGrayColor].CGColor;
         }
         
         else {
             button.alpha = 0.5;
-            button.layer.borderWidth = 0.0;
         }
     }
     
-    if (trackOneButtonStateArray[self.data.sampleNumber] == 1) {    // if state of button with the tag matching the sample number is 1
+     // if state of button with the tag matching the sample number is 1
+    if (trackOneButtonStateArray[self.data.sampleNumber] == 1) {
         
-        if ([self.data.trackOne isPlaying]) {                       // if sample is already playing
-            [self.data.trackOne stop];                              // stop sample
-            self.data.trackOne.currentTime = 0.0;                   // rewind sample
+        // if sample is already playing
+        if ([self.data.trackOne isPlaying]) {
+            // stop sample
+            [self.data.trackOne stop];
+            // rewind sample
+            self.data.trackOne.currentTime = 0.0;
         }
-        [self.data.trackOne play];                                  // play sample
+        // play sample
+        [self.data.trackOne play];
     }
     
     if (trackTwoButtonStateArray[self.data.sampleNumber] == 1) {
@@ -446,5 +542,3 @@
 }
 
 @end
-
-// 32:04 VIDEO
