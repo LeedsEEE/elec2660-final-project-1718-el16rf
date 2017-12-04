@@ -21,6 +21,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjt-QF-m0q">
                                 <frame key="frameInset" minX="20" minY="20" width="52" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="playButton"/>
                                 <connections>
                                     <action selector="didPressPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rXg-D5-xvx"/>
                                 </connections>
@@ -28,6 +29,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugr-FR-XBB">
                                 <frame key="frameInset" minX="104" minY="20" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="stopButton"/>
                                 <connections>
                                     <action selector="didPressStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ef0-q2-N3R"/>
                                 </connections>
@@ -42,6 +44,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwq-gf-6s1">
                                 <frame key="frameInset" minX="76" minY="20" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="pauseButton"/>
                                 <connections>
                                     <action selector="didPressPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0t-2T-3Gr"/>
                                 </connections>
@@ -811,6 +814,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9Z-Mu-UuB">
                                 <frame key="frameInset" minX="308" minY="20" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="decrementButton"/>
                                 <connections>
                                     <action selector="didPressBPMIncrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOx-Qi-mEq"/>
                                 </connections>
@@ -818,12 +822,13 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u77-Bk-FsG">
                                 <frame key="frameInset" minX="76" minY="48" width="52" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="clearButton"/>
                                 <connections>
                                     <action selector="didPressClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BOa-9t-qnr"/>
                                     <action selector="didPressPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxo-a2-yHa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(BPM)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZf-2R-fT4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BPMLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZf-2R-fT4">
                                 <frame key="frameInset" minX="308" minY="48" width="52" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -833,6 +838,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syn-Ha-pA3">
                                 <frame key="frameInset" minX="336" minY="20" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="incrementButton"/>
                                 <connections>
                                     <action selector="didPressBPMDecrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ico-AI-Iy3"/>
                                 </connections>
