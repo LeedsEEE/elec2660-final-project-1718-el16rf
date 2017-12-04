@@ -35,7 +35,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *pauseButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIButton *clearButton;
 @property (weak, nonatomic) IBOutlet UISlider *BPMSlider;
+@property (weak, nonatomic) IBOutlet UIButton *decrementButton;
+@property (weak, nonatomic) IBOutlet UIButton *incrementButton;
 
 // Track buttons
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
@@ -61,6 +64,7 @@
 - (IBAction)didPressPlay:(id)sender;
 - (IBAction)didPressPause:(id)sender;
 - (IBAction)didPressStop:(id)sender;
+- (IBAction)didPressClear:(id)sender;
 - (IBAction)didMoveBPMSlider:(UISlider *)sender;
 - (IBAction)didPressBPMDecrement:(id)sender;
 - (IBAction)didPressBPMIncrement:(id)sender;

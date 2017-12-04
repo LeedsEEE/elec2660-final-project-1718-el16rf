@@ -22,9 +22,14 @@
     [self didMoveBPMSlider:self.BPMSlider];
     self.data.sampleNumber = 0;
     [self initButtons];
+    [self initControls];
+    
     self.playButton.enabled = YES;
     self.pauseButton.enabled = NO;
     self.stopButton.enabled = NO;
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,8 +140,13 @@
     }
     
     for (UIButton *button in self.trackSixButtons) {
-        button.alpha = 0.5;                                         
+        button.alpha = 0.5;
     }
+}
+
+- (IBAction)didPressClear:(id)sender {
+    NSLog(@"clear button pressed");
+    [self initButtons];
 }
 
 - (IBAction)didMoveBPMSlider:(UISlider *)sender {
@@ -180,7 +190,9 @@
         // 1 written to the array at the index specified by the button tag
         trackOneButtonStateArray[sender.tag] = 1;
         // colour background
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        // http://uicolor.xyz/#/hex-to-ui
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.44 blue:0.71 alpha:1.0].CGColor;
+        
         // button bool selected state changed
         sender.selected = NO;
     }
@@ -188,7 +200,7 @@
     else {
         NSLog(@"track 1; button %ld deselected - state %d", sender.tag, sender.selected);
         trackOneButtonStateArray[sender.tag] = 0;
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
 }
@@ -198,14 +210,14 @@
     if ([sender isSelected]) {
         NSLog(@"track 2; button %ld selected - state %d", sender.tag, sender.selected);
         trackTwoButtonStateArray[sender.tag] = 1;
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.54 blue:0.71 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 2; button %ld deselected - state %d", sender.tag, sender.selected);
         trackTwoButtonStateArray[sender.tag] = 0;
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
 }
@@ -215,14 +227,14 @@
     if ([sender isSelected]) {
         NSLog(@"track 3; button %ld selected - state %d", sender.tag, sender.selected);
         trackThreeButtonStateArray[sender.tag] = 1;
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.69 blue:0.71 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 3; button %ld deselected - state %d", sender.tag, sender.selected);
         trackThreeButtonStateArray[sender.tag] = 0;
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
 }
@@ -232,14 +244,14 @@
     if ([sender isSelected]) {
         NSLog(@"track 4; button %ld selected - state %d", sender.tag, sender.selected);
         trackFourButtonStateArray[sender.tag] = 1;
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.71 blue:0.57 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 4; button %ld deselected - state %d", sender.tag, sender.selected);
         trackFourButtonStateArray[sender.tag] = 0;
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
 }
@@ -249,14 +261,14 @@
     if ([sender isSelected]) {
         NSLog(@"track 5; button %ld selected - state %d", sender.tag, sender.selected);
         trackFiveButtonStateArray[sender.tag] = 1;
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.71 blue:0.37 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 5; button %ld deselected - state %d", sender.tag, sender.selected);
         trackFiveButtonStateArray[sender.tag] = 0;
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
 }
@@ -266,14 +278,14 @@
     if ([sender isSelected]) {
         NSLog(@"track 6; button %ld selected - state %d", sender.tag, sender.selected);
         trackSixButtonStateArray[sender.tag] = 1;
-        sender.layer.backgroundColor = [UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.44 green:0.73 blue:0.32 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 6; button %ld deselected - state %d", sender.tag, sender.selected);
         trackSixButtonStateArray[sender.tag] = 0;
-        sender.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
 }
@@ -442,7 +454,7 @@
         }
     }
     
-     // if state of button with the tag matching the sample number is 1
+    // if state of button with the tag matching the sample number is 1
     if (trackOneButtonStateArray[self.data.sampleNumber] == 1) {
         
         // if sample is already playing
@@ -512,38 +524,71 @@
     for (UIButton *button in self.trackOneButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        // https://stackoverflow.com/questions/3330378/cocoa-touch-how-to-change-uiviews-border-color-and-thickness
+        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackTwoButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackThreeButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackFourButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackFiveButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackSixButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 1.0;
+        button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
+}
+
+-(void) initControls {
+    self.playButton.layer.borderWidth = 1.0;
+    self.playButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    
+    self.pauseButton.layer.borderWidth = 1.0;
+    self.pauseButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    
+    self.stopButton.layer.borderWidth = 1.0;
+    self.stopButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    
+    self.clearButton.layer.borderWidth = 1.0;
+    self.clearButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    
+    self.decrementButton.layer.borderWidth = 1.0;
+    self.decrementButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    
+    self.incrementButton.layer.borderWidth = 1.0;
+    self.incrementButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
 }
 
 @end
