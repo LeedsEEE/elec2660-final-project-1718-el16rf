@@ -23,11 +23,6 @@
 		9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */; };
 		9F9423051FC49B7100CDC201 /* Sequencerv2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9423041FC49B7100CDC201 /* Sequencerv2Tests.m */; };
 		9F9423101FC49B7100CDC201 /* Sequencerv2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */; };
-		9FD5FFEA1FD5C72A00F6DC56 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5FFE91FD5C72A00F6DC56 /* plus.png */; };
-		9FD5FFEC1FD5C73400F6DC56 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5FFEB1FD5C73400F6DC56 /* minus.png */; };
-		9FD5FFEE1FD5C74100F6DC56 /* pause-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5FFED1FD5C74100F6DC56 /* pause-1.png */; };
-		9FD5FFF01FD5C74C00F6DC56 /* play-button-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5FFEF1FD5C74C00F6DC56 /* play-button-1.png */; };
-		9FD5FFF21FD5C76000F6DC56 /* stop-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FD5FFF11FD5C76000F6DC56 /* stop-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +68,6 @@
 		9F94230B1FC49B7100CDC201 /* Sequencerv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sequencerv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sequencerv2UITests.m; sourceTree = "<group>"; };
 		9F9423111FC49B7100CDC201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FD5FFE91FD5C72A00F6DC56 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
-		9FD5FFEB1FD5C73400F6DC56 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
-		9FD5FFED1FD5C74100F6DC56 /* pause-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause-1.png"; sourceTree = "<group>"; };
-		9FD5FFEF1FD5C74C00F6DC56 /* play-button-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button-1.png"; sourceTree = "<group>"; };
-		9FD5FFF11FD5C76000F6DC56 /* stop-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,11 +185,6 @@
 		9FB607261FD5B700009A7B63 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9FD5FFE91FD5C72A00F6DC56 /* plus.png */,
-				9FD5FFED1FD5C74100F6DC56 /* pause-1.png */,
-				9FD5FFF11FD5C76000F6DC56 /* stop-1.png */,
-				9FD5FFEF1FD5C74C00F6DC56 /* play-button-1.png */,
-				9FD5FFEB1FD5C73400F6DC56 /* minus.png */,
 				9F066A701FD59E1C008A8C25 /* background.png */,
 			);
 			name = Images;
@@ -313,19 +298,14 @@
 			files = (
 				9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */,
 				9F066A711FD59E1C008A8C25 /* background.png in Resources */,
-				9FD5FFEC1FD5C73400F6DC56 /* minus.png in Resources */,
 				9F066A6B1FD59775008A8C25 /* electro_closedhat.wav in Resources */,
 				9F066A691FD59757008A8C25 /* electro_clap.wav in Resources */,
-				9FD5FFF01FD5C74C00F6DC56 /* play-button-1.png in Resources */,
 				9F066A641FD59679008A8C25 /* electro_kick.wav in Resources */,
 				9F9422F71FC49B7100CDC201 /* Assets.xcassets in Resources */,
 				9F066A6D1FD59785008A8C25 /* electro_openhat.wav in Resources */,
-				9FD5FFEE1FD5C74100F6DC56 /* pause-1.png in Resources */,
 				9F066A6F1FD59833008A8C25 /* electro_crash.wav in Resources */,
 				9F9422F51FC49B7100CDC201 /* Main.storyboard in Resources */,
 				9F066A661FD596EA008A8C25 /* electro_snare.wav in Resources */,
-				9FD5FFF21FD5C76000F6DC56 /* stop-1.png in Resources */,
-				9FD5FFEA1FD5C72A00F6DC56 /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
