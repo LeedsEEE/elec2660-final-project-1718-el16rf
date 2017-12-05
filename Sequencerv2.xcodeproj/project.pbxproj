@@ -25,6 +25,7 @@
 		9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */; };
 		9F9423051FC49B7100CDC201 /* Sequencerv2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9423041FC49B7100CDC201 /* Sequencerv2Tests.m */; };
 		9F9423101FC49B7100CDC201 /* Sequencerv2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */; };
+		9FBB5FBF1FD7321B008BBB4A /* SampleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBB5FBE1FD7321B008BBB4A /* SampleStyle.m */; };
 		9FF4A7C41FD725110022F69F /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C31FD725110022F69F /* clear.png */; };
 		9FF4A7C61FD725200022F69F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C51FD725200022F69F /* play.png */; };
 		9FF4A7C81FD725290022F69F /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C71FD725290022F69F /* decrement.png */; };
@@ -79,6 +80,8 @@
 		9F94230B1FC49B7100CDC201 /* Sequencerv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sequencerv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sequencerv2UITests.m; sourceTree = "<group>"; };
 		9F9423111FC49B7100CDC201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FBB5FBD1FD7321B008BBB4A /* SampleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleStyle.h; sourceTree = "<group>"; };
+		9FBB5FBE1FD7321B008BBB4A /* SampleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleStyle.m; sourceTree = "<group>"; };
 		9FF4A7C31FD725110022F69F /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
 		9FF4A7C51FD725200022F69F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		9FF4A7C71FD725290022F69F /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decrement.png; sourceTree = "<group>"; };
@@ -171,12 +174,14 @@
 				9F9422EE1FC49B7100CDC201 /* AppDelegate.m */,
 				9F5D422D1FC743E80028C4DC /* DataModel.h */,
 				9F5D422E1FC743E80028C4DC /* DataModel.m */,
+				9FBB5FBD1FD7321B008BBB4A /* SampleStyle.h */,
+				9FBB5FBE1FD7321B008BBB4A /* SampleStyle.m */,
 				9F9422F01FC49B7100CDC201 /* ViewController.h */,
 				9F9422F11FC49B7100CDC201 /* ViewController.m */,
-				9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */,
-				9F9422F31FC49B7100CDC201 /* Main.storyboard */,
 				9F25BCD41FD72AE80067D82E /* TableViewController.h */,
 				9F25BCD51FD72AE80067D82E /* TableViewController.m */,
+				9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */,
+				9F9422F31FC49B7100CDC201 /* Main.storyboard */,
 				9F066A721FD59E2C008A8C25 /* Media */,
 				9F9422F61FC49B7100CDC201 /* Assets.xcassets */,
 				9F9422FB1FC49B7100CDC201 /* Info.plist */,
@@ -374,6 +379,7 @@
 				9F9422F21FC49B7100CDC201 /* ViewController.m in Sources */,
 				9F5D422F1FC743E80028C4DC /* DataModel.m in Sources */,
 				9F9422EF1FC49B7100CDC201 /* AppDelegate.m in Sources */,
+				9FBB5FBF1FD7321B008BBB4A /* SampleStyle.m in Sources */,
 				9F25BCD61FD72AE80067D82E /* TableViewController.m in Sources */,
 				9F9422EC1FC49B7100CDC201 /* main.m in Sources */,
 			);

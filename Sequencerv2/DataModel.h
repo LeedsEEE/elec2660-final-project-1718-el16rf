@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "SampleStyle.h"
 
 @interface DataModel : NSObject
 

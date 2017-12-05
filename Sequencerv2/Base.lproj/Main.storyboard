@@ -6,20 +6,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wrS-A0-MNw">
+            <objects>
+                <navigationController id="GQV-2l-j0M" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ShD-Vi-5Uo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Cl6-FS-ydh" kind="relationship" relationship="rootViewController" id="9WE-Tc-xTY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U26-wZ-CBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="73"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="fdP-aY-CNP">
             <objects>
-                <tableViewController id="Cl6-FS-ydh" sceneMemberID="viewController">
+                <tableViewController id="Cl6-FS-ydh" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="98M-vU-EYT">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8e7-CV-3Dy">
-                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="667" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8e7-CV-3Dy" id="u4T-Dj-LYl">
-                                    <frame key="frameInset" width="667" height="43"/>
+                                    <frame key="frameInset" width="667" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -29,10 +45,14 @@
                             <outlet property="delegate" destination="Cl6-FS-ydh" id="gjf-bb-UND"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="Rgy-E5-G6Z"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="hHv-2Q-iAC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcb-Bi-mOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="94"/>
+            <point key="canvasLocation" x="619" y="73"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -934,6 +954,9 @@
                                 <frame key="frameInset" minX="369" minY="31" width="101" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sample style..."/>
+                                <connections>
+                                    <segue destination="GQV-2l-j0M" kind="show" id="Pe5-ti-5GX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1053,7 +1076,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.326836581709152" y="93.599999999999994"/>
+            <point key="canvasLocation" x="-704" y="73"/>
         </scene>
     </scenes>
     <resources>
