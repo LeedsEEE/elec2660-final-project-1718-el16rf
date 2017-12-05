@@ -39,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *BPMSlider;
 @property (weak, nonatomic) IBOutlet UIButton *decrementButton;
 @property (weak, nonatomic) IBOutlet UIButton *incrementButton;
+@property (weak, nonatomic) IBOutlet UILabel *BPMLabel;
 
 // Track buttons
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;

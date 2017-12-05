@@ -111,13 +111,13 @@
 			name = "Electro Samples";
 			sourceTree = "<group>";
 		};
-		9F066A721FD59E2C008A8C25 /* Assets */ = {
+		9F066A721FD59E2C008A8C25 /* Media */ = {
 			isa = PBXGroup;
 			children = (
 				9F066A671FD59706008A8C25 /* Electro Samples */,
 				9FB607261FD5B700009A7B63 /* Images */,
 			);
-			name = Assets;
+			name = Media;
 			sourceTree = "<group>";
 		};
 		9F1BF8C21FD5EF5C00BBD675 /* Frameworks */ = {
@@ -160,7 +160,7 @@
 				9F9422F11FC49B7100CDC201 /* ViewController.m */,
 				9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */,
 				9F9422F31FC49B7100CDC201 /* Main.storyboard */,
-				9F066A721FD59E2C008A8C25 /* Assets */,
+				9F066A721FD59E2C008A8C25 /* Media */,
 				9F9422F61FC49B7100CDC201 /* Assets.xcassets */,
 				9F9422FB1FC49B7100CDC201 /* Info.plist */,
 				9F9422EA1FC49B7100CDC201 /* Supporting Files */,

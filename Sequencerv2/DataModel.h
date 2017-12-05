@@ -33,6 +33,9 @@
 // METHODS //
 /////////////
 
--(void) initAudioPlayers;
+-(void) initElectroSamples;
+-(void) initDubstepSamples;
+-(void) initAcousticSamples;
+-(void) initHipHopSamples;
 
 @end

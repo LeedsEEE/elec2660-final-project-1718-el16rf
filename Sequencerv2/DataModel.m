@@ -10,8 +10,8 @@
 
 @implementation DataModel
 
--(void) initAudioPlayers {
-    NSLog(@"initialising audio players...");
+-(void) initElectroSamples {
+    NSLog(@"initialising electro samples...");
     
     // Track one
     NSString *trackOneFilePath = [[NSBundle mainBundle] pathForResource:@"electro_kick" ofType:@"wav"];
@@ -49,5 +49,19 @@
     self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
     [self.trackSix prepareToPlay];
 }
+
+-(void) initDubstepSamples {
+    NSLog(@"initialising dubstep samples...");
+}
+
+-(void) initAcousticSamples {
+    NSLog(@"initialising acoustic samples...");
+}
+
+-(void) initHipHopSamples {
+    NSLog(@"initialising hip hop samples...");
+}
+
+
 
 @end

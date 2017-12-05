@@ -18,7 +18,7 @@
     [super viewDidLoad];
     self.data = [[DataModel alloc] init];
     [self initTrackArrays];
-    [self.data initAudioPlayers];
+    [self.data initElectroSamples];
     [self didMoveBPMSlider:self.BPMSlider];
     self.data.sampleNumber = 0;
     [self initButtons];
@@ -27,9 +27,6 @@
     self.playButton.enabled = YES;
     self.pauseButton.enabled = NO;
     self.stopButton.enabled = NO;
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
