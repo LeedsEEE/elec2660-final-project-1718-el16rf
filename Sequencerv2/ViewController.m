@@ -154,6 +154,8 @@
         [self.data.timer invalidate];
         [self didPressPlay:nil];
     }
+    
+    self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
 - (IBAction)didPressBPMDecrement:(id)sender {
@@ -165,6 +167,8 @@
         [self.data.timer invalidate];
         [self didPressPlay:nil];
     }
+    
+    self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
 - (IBAction)didPressBPMIncrement:(id)sender {
@@ -176,6 +180,8 @@
         [self.data.timer invalidate];
         [self didPressPlay:nil];
     }
+    
+    self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
 // track 1
