@@ -143,6 +143,8 @@
 
 - (IBAction)didPressClear:(id)sender {
     NSLog(@"clear button pressed");
+    [self didPressStop:nil];
+    [self initTrackArrays];
     [self initButtons];
 }
 
