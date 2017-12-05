@@ -6,6 +6,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="fdP-aY-CNP">
+            <objects>
+                <tableViewController id="Cl6-FS-ydh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="98M-vU-EYT">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8e7-CV-3Dy">
+                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8e7-CV-3Dy" id="u4T-Dj-LYl">
+                                    <frame key="frameInset" width="667" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cl6-FS-ydh" id="Tat-yz-ZFY"/>
+                            <outlet property="delegate" destination="Cl6-FS-ydh" id="gjf-bb-UND"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dcb-Bi-mOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="94"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -836,11 +864,11 @@
                                     <action selector="didPressBPMIncrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOx-Qi-mEq"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play-button.png" translatesAutoresizingMaskIntoConstraints="NO" id="t3h-vJ-Bwx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play.png" translatesAutoresizingMaskIntoConstraints="NO" id="t3h-vJ-Bwx">
                                 <frame key="frameInset" minX="27" minY="27" width="39" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="multiply.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMX-si-eem">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clear.png" translatesAutoresizingMaskIntoConstraints="NO" id="eMX-si-eem">
                                 <frame key="frameInset" minX="93" minY="51" width="18" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -852,11 +880,11 @@
                                 <frame key="frameInset" minX="107" minY="23" width="18" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="substract.png" translatesAutoresizingMaskIntoConstraints="NO" id="dys-P7-ejj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="decrement.png" translatesAutoresizingMaskIntoConstraints="NO" id="dys-P7-ejj">
                                 <frame key="frameInset" minX="311" minY="23" width="18" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add.png" translatesAutoresizingMaskIntoConstraints="NO" id="XPc-TB-HMJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="increment.png" translatesAutoresizingMaskIntoConstraints="NO" id="XPc-TB-HMJ">
                                 <frame key="frameInset" minX="339" minY="23" width="18" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -902,6 +930,11 @@
                                 <color key="textColor" red="0.59510105848312378" green="0.74789470434188843" blue="0.38789403438568115" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xd8-wo-AYQ">
+                                <frame key="frameInset" minX="369" minY="31" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sample style..."/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1024,11 +1057,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add.png" width="512" height="512"/>
-        <image name="multiply.png" width="512" height="512"/>
+        <image name="clear.png" width="512" height="512"/>
+        <image name="decrement.png" width="512" height="512"/>
+        <image name="increment.png" width="512" height="512"/>
         <image name="pause.png" width="512" height="512"/>
-        <image name="play-button.png" width="512" height="512"/>
+        <image name="play.png" width="512" height="512"/>
         <image name="stop.png" width="512" height="512"/>
-        <image name="substract.png" width="512" height="512"/>
     </resources>
 </document>

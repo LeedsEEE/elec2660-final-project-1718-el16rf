@@ -15,6 +15,7 @@
 		9F066A6F1FD59833008A8C25 /* electro_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A6E1FD59833008A8C25 /* electro_crash.wav */; };
 		9F066A711FD59E1C008A8C25 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A701FD59E1C008A8C25 /* background.png */; };
 		9F1BF8C41FD5EF5C00BBD675 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1BF8C31FD5EF5C00BBD675 /* AVFoundation.framework */; };
+		9F25BCD61FD72AE80067D82E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F25BCD51FD72AE80067D82E /* TableViewController.m */; };
 		9F5D422F1FC743E80028C4DC /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D422E1FC743E80028C4DC /* DataModel.m */; };
 		9F9422EC1FC49B7100CDC201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9422EB1FC49B7100CDC201 /* main.m */; };
 		9F9422EF1FC49B7100CDC201 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9422EE1FC49B7100CDC201 /* AppDelegate.m */; };
@@ -24,12 +25,12 @@
 		9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */; };
 		9F9423051FC49B7100CDC201 /* Sequencerv2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9423041FC49B7100CDC201 /* Sequencerv2Tests.m */; };
 		9F9423101FC49B7100CDC201 /* Sequencerv2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */; };
-		9FF4A7C41FD725110022F69F /* multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C31FD725110022F69F /* multiply.png */; };
-		9FF4A7C61FD725200022F69F /* play-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C51FD725200022F69F /* play-button.png */; };
-		9FF4A7C81FD725290022F69F /* substract.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C71FD725290022F69F /* substract.png */; };
+		9FF4A7C41FD725110022F69F /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C31FD725110022F69F /* clear.png */; };
+		9FF4A7C61FD725200022F69F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C51FD725200022F69F /* play.png */; };
+		9FF4A7C81FD725290022F69F /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C71FD725290022F69F /* decrement.png */; };
 		9FF4A7CA1FD725430022F69F /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C91FD725430022F69F /* pause.png */; };
 		9FF4A7CC1FD7256B0022F69F /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7CB1FD7256B0022F69F /* stop.png */; };
-		9FF4A7CE1FD7257C0022F69F /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7CD1FD7257C0022F69F /* add.png */; };
+		9FF4A7CE1FD7257C0022F69F /* increment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7CD1FD7257C0022F69F /* increment.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		9F066A6E1FD59833008A8C25 /* electro_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_crash.wav; sourceTree = "<group>"; };
 		9F066A701FD59E1C008A8C25 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		9F1BF8C31FD5EF5C00BBD675 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9F25BCD41FD72AE80067D82E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		9F25BCD51FD72AE80067D82E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		9F5D422D1FC743E80028C4DC /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		9F5D422E1FC743E80028C4DC /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		9F9422E71FC49B7100CDC201 /* Sequencerv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sequencerv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,12 +79,12 @@
 		9F94230B1FC49B7100CDC201 /* Sequencerv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sequencerv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sequencerv2UITests.m; sourceTree = "<group>"; };
 		9F9423111FC49B7100CDC201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FF4A7C31FD725110022F69F /* multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiply.png; sourceTree = "<group>"; };
-		9FF4A7C51FD725200022F69F /* play-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-button.png"; sourceTree = "<group>"; };
-		9FF4A7C71FD725290022F69F /* substract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = substract.png; sourceTree = "<group>"; };
+		9FF4A7C31FD725110022F69F /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
+		9FF4A7C51FD725200022F69F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		9FF4A7C71FD725290022F69F /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decrement.png; sourceTree = "<group>"; };
 		9FF4A7C91FD725430022F69F /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		9FF4A7CB1FD7256B0022F69F /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
-		9FF4A7CD1FD7257C0022F69F /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		9FF4A7CD1FD7257C0022F69F /* increment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = increment.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +175,8 @@
 				9F9422F11FC49B7100CDC201 /* ViewController.m */,
 				9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */,
 				9F9422F31FC49B7100CDC201 /* Main.storyboard */,
+				9F25BCD41FD72AE80067D82E /* TableViewController.h */,
+				9F25BCD51FD72AE80067D82E /* TableViewController.m */,
 				9F066A721FD59E2C008A8C25 /* Media */,
 				9F9422F61FC49B7100CDC201 /* Assets.xcassets */,
 				9F9422FB1FC49B7100CDC201 /* Info.plist */,
@@ -209,12 +214,12 @@
 		9FB607261FD5B700009A7B63 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9FF4A7C31FD725110022F69F /* multiply.png */,
+				9FF4A7C31FD725110022F69F /* clear.png */,
 				9FF4A7C91FD725430022F69F /* pause.png */,
-				9FF4A7CD1FD7257C0022F69F /* add.png */,
+				9FF4A7CD1FD7257C0022F69F /* increment.png */,
 				9FF4A7CB1FD7256B0022F69F /* stop.png */,
-				9FF4A7C71FD725290022F69F /* substract.png */,
-				9FF4A7C51FD725200022F69F /* play-button.png */,
+				9FF4A7C71FD725290022F69F /* decrement.png */,
+				9FF4A7C51FD725200022F69F /* play.png */,
 				9F066A701FD59E1C008A8C25 /* background.png */,
 			);
 			name = Images;
@@ -329,9 +334,9 @@
 				9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */,
 				9F066A711FD59E1C008A8C25 /* background.png in Resources */,
 				9F066A6B1FD59775008A8C25 /* electro_closedhat.wav in Resources */,
-				9FF4A7CE1FD7257C0022F69F /* add.png in Resources */,
-				9FF4A7C41FD725110022F69F /* multiply.png in Resources */,
-				9FF4A7C81FD725290022F69F /* substract.png in Resources */,
+				9FF4A7CE1FD7257C0022F69F /* increment.png in Resources */,
+				9FF4A7C41FD725110022F69F /* clear.png in Resources */,
+				9FF4A7C81FD725290022F69F /* decrement.png in Resources */,
 				9F066A691FD59757008A8C25 /* electro_clap.wav in Resources */,
 				9F066A641FD59679008A8C25 /* electro_kick.wav in Resources */,
 				9F9422F71FC49B7100CDC201 /* Assets.xcassets in Resources */,
@@ -339,7 +344,7 @@
 				9F066A6F1FD59833008A8C25 /* electro_crash.wav in Resources */,
 				9FF4A7CA1FD725430022F69F /* pause.png in Resources */,
 				9FF4A7CC1FD7256B0022F69F /* stop.png in Resources */,
-				9FF4A7C61FD725200022F69F /* play-button.png in Resources */,
+				9FF4A7C61FD725200022F69F /* play.png in Resources */,
 				9F9422F51FC49B7100CDC201 /* Main.storyboard in Resources */,
 				9F066A661FD596EA008A8C25 /* electro_snare.wav in Resources */,
 			);
@@ -369,6 +374,7 @@
 				9F9422F21FC49B7100CDC201 /* ViewController.m in Sources */,
 				9F5D422F1FC743E80028C4DC /* DataModel.m in Sources */,
 				9F9422EF1FC49B7100CDC201 /* AppDelegate.m in Sources */,
+				9F25BCD61FD72AE80067D82E /* TableViewController.m in Sources */,
 				9F9422EC1FC49B7100CDC201 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
