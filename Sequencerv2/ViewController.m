@@ -38,7 +38,7 @@
     NSLog(@"play button pressed");
     
     self.data.playing = YES;
-    self.data.timer = [NSTimer scheduledTimerWithTimeInterval:30.0/self.data.BPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    self.data.timer = [NSTimer scheduledTimerWithTimeInterval:15.0/self.data.BPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
     ((UIButton *)sender).enabled = NO;
     self.pauseButton.enabled = YES;
@@ -161,7 +161,7 @@
 - (IBAction)didPressBPMDecrement:(id)sender {
     self.data.BPM--;
     self.BPMSlider.value--;
-    NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
+    NSLog(@"BPM decrement button pressed; BPM = %d", self.data.BPM);
     
     if (self.data.playing == YES) {
         [self.data.timer invalidate];
@@ -174,7 +174,7 @@
 - (IBAction)didPressBPMIncrement:(id)sender {
     self.data.BPM++;
     self.BPMSlider.value++;
-    NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
+    NSLog(@"BPM increment button pressed; BPM = %d", self.data.BPM);
     
     if (self.data.playing == YES) {
         [self.data.timer invalidate];
@@ -577,21 +577,31 @@
 -(void) initControls {
     self.playButton.layer.borderWidth = 1.0;
     self.playButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.playButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
     
     self.pauseButton.layer.borderWidth = 1.0;
     self.pauseButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.pauseButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
     
     self.stopButton.layer.borderWidth = 1.0;
     self.stopButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.stopButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
     
     self.clearButton.layer.borderWidth = 1.0;
     self.clearButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.clearButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
     
     self.decrementButton.layer.borderWidth = 1.0;
     self.decrementButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.decrementButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
     
     self.incrementButton.layer.borderWidth = 1.0;
     self.incrementButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.incrementButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    
+    self.BPMLabel.layer.borderWidth = 1.0;
+    self.BPMLabel.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.BPMLabel.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
 }
 
 @end
