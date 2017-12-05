@@ -526,6 +526,8 @@
 }
 
 -(void) initButtonStyle {
+    NSLog(@"button style initialised");
+    
     for (UIButton *button in self.trackOneButtons) {
         button.selected = YES;
         button.alpha = 0.5;
@@ -577,6 +579,8 @@
 }
 
 -(void) initControlStyle {
+    NSLog(@"control style initialised");
+    
     self.playButton.layer.borderWidth = 1.0;
     self.playButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     self.playButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
