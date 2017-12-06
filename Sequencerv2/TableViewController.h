@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataModel.h"
+#import "SampleStyle.h"
 
 @interface TableViewController : UITableViewController
+
+@property (strong, nonatomic) DataModel *data;
 
 @end

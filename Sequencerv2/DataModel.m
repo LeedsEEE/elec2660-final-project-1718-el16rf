@@ -10,6 +10,42 @@
 
 @implementation DataModel
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.samples = [NSMutableArray array];
+        SampleStyle *electro = [[SampleStyle alloc] init];
+        electro.styleName = @"Electro";
+        electro.author = @"iZotope";
+        
+        self.samples = [NSMutableArray array];
+        SampleStyle *dubstep = [[SampleStyle alloc] init];
+        dubstep.styleName = @"Dubstep";
+        dubstep.author = @"iZotope";
+        
+        self.samples = [NSMutableArray array];
+        SampleStyle *acoustic = [[SampleStyle alloc] init];
+        acoustic.styleName = @"Acoustic";
+        acoustic.author = @"iZotope";
+        
+        self.samples = [NSMutableArray array];
+        SampleStyle *hipHop = [[SampleStyle alloc] init];
+        hipHop.styleName = @"Hip-Hop";
+        hipHop.author = @"iZotope";
+        
+        // index 0
+        [self.samples addObject:electro];
+        // index 1
+        [self.samples addObject:dubstep];
+        // index 2
+        [self.samples addObject:acoustic];
+        // index 3
+        [self.samples addObject:hipHop];
+    }
+    return self;
+}
+
 -(void) initElectroSamples {
     NSLog(@"initialising electro samples...");
     

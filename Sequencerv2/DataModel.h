@@ -21,6 +21,7 @@
 @property (strong, nonatomic) NSTimer *timer;
 @property NSInteger sampleNumber;
 @property BOOL playing;
+@property (nonatomic, strong) NSMutableArray *samples;
 
 // Track audio players
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
