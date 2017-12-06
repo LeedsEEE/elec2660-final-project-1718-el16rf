@@ -31,6 +31,12 @@
 // Object definitions
 @property DataModel *data;
 
+@property BOOL *electroSelected;
+@property BOOL *dubstepSelected;
+@property BOOL *acousticSelected;
+@property BOOL *hipHopSelected;
+
+
 // Global controls
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIButton *pauseButton;
