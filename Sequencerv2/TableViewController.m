@@ -109,7 +109,22 @@
         
         if (indexPath.section == 0) {
             [self.data.samples objectAtIndex:indexPath.row];
-            destinationViewController.dubstepSelected = 
+            destinationViewController.electroSelected = TRUE;
+        }
+        
+        if (indexPath.section == 1) {
+            [self.data.samples objectAtIndex:indexPath.row];
+            destinationViewController.dubstepSelected = TRUE;
+        }
+        
+        if (indexPath.section == 2) {
+            [self.data.samples objectAtIndex:indexPath.row];
+            destinationViewController.acousticSelected = TRUE;
+        }
+        
+        if (indexPath.section == 3) {
+            [self.data.samples objectAtIndex:indexPath.row];
+            destinationViewController.hipHopSelected = TRUE;
         }
     }
 }
