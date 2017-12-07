@@ -39,12 +39,9 @@
 
 // https://stackoverflow.com/questions/12509422/how-to-perform-unwind-segue-programmatically
 // https://stackoverflow.com/questions/27392203/unwind-push-segue-from-uitableviewcell-tap
-- (IBAction)unwindToMainView: (UIStoryboardSegue *)segue {
+- (IBAction)unwindToMainView: (UIStoryboardSegue *)unwindSegue {
     
-    
-    UITableViewCell *cell =
-    
-    [self performSegueWithIdentifier:@"UnwindMainView" sender:cell];
+    [self performSegueWithIdentifier:@"UnwindMainView" sender:self.tableView.cell];
 }
 
 - (IBAction)didPressPlay:(id)sender {

@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) DataModel *data;
 
+@property UITableViewCell *cell;
+
 @end

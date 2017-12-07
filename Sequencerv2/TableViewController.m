@@ -52,6 +52,8 @@
     
     // Configure the cell...
     
+    self.cell = cell;
+    
     if (indexPath.section == 0) {
         SampleStyle *tempSampleStyle = [self.data.samples objectAtIndex:indexPath.row];
         
@@ -60,9 +62,6 @@
     }
     return cell;
 }
-
-
-
 
 /*
  // Override to support conditional editing of the table view.
