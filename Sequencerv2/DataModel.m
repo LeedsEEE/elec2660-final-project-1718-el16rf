@@ -16,32 +16,39 @@
     if (self) {
         self.samples = [NSMutableArray array];
         SampleStyle *electro = [[SampleStyle alloc] init];
-        electro.styleName = @"Electro";
-        electro.author = @"iZotope";
+        electro.name = @"iZotope";
+        electro.style = @"Electro";
         
         self.samples = [NSMutableArray array];
         SampleStyle *dubstep = [[SampleStyle alloc] init];
-        dubstep.styleName = @"Dubstep";
-        dubstep.author = @"iZotope";
+        dubstep.name = @"Leviathan";
+        dubstep.style = @"Dubstep";
         
         self.samples = [NSMutableArray array];
-        SampleStyle *acoustic = [[SampleStyle alloc] init];
-        acoustic.styleName = @"Acoustic";
-        acoustic.author = @"iZotope";
+        SampleStyle *drumAndBass = [[SampleStyle alloc] init];
+        drumAndBass.name = @"Danny Byrd";
+        drumAndBass.style = @"Drum & Bass";
         
         self.samples = [NSMutableArray array];
         SampleStyle *hipHop = [[SampleStyle alloc] init];
-        hipHop.styleName = @"Hip-Hop";
-        hipHop.author = @"iZotope";
+        hipHop.name = @"Noir Sound";
+        hipHop.style = @"Hip-Hop";
+        
+        self.samples = [NSMutableArray array];
+        SampleStyle *futureBass = [[SampleStyle alloc] init];
+        futureBass.name = @"KSHMR";
+        futureBass.style = @"Future Bass";
         
         // index 0
         [self.samples addObject:electro];
         // index 1
         [self.samples addObject:dubstep];
         // index 2
-        [self.samples addObject:acoustic];
+        [self.samples addObject:drumAndBass];
         // index 3
         [self.samples addObject:hipHop];
+        // index 4
+        [self.samples addObject:futureBass];
     }
     return self;
 }

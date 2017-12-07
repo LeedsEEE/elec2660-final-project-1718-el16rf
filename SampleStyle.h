@@ -10,7 +10,7 @@
 
 @interface SampleStyle : NSObject
 
-@property (nonatomic, strong) NSString *styleName;
-@property (nonatomic, strong) NSString *author;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *style;
 
 @end

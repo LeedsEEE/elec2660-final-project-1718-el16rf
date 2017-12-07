@@ -55,8 +55,8 @@
     if (indexPath.section == 0) {
         SampleStyle *tempSampleStyle = [self.data.samples objectAtIndex:indexPath.row];
         
-        cell.textLabel.text = tempSampleStyle.styleName;
-        cell.detailTextLabel.text = tempSampleStyle.author;
+        cell.textLabel.text = tempSampleStyle.name;
+        cell.detailTextLabel.text = tempSampleStyle.style;
     }
     return cell;
 }
@@ -105,27 +105,8 @@
     // Pass the selected object to the new view controller.
     if ([[segue identifier] isEqualToString:@"SelectSampleStyle"]) {
         ViewController *destinationViewController = [segue destinationViewController];
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        if (indexPath.section == 0) {
-            [self.data.samples objectAtIndex:indexPath.row];
-            destinationViewController.electroSelected = TRUE;
-        }
-        
-        if (indexPath.section == 1) {
-            [self.data.samples objectAtIndex:indexPath.row];
-            destinationViewController.dubstepSelected = TRUE;
-        }
-        
-        if (indexPath.section == 2) {
-            [self.data.samples objectAtIndex:indexPath.row];
-            destinationViewController.acousticSelected = TRUE;
-        }
-        
-        if (indexPath.section == 3) {
-            [self.data.samples objectAtIndex:indexPath.row];
-            destinationViewController.hipHopSelected = TRUE;
-        }
+        [destinationViewController clearAll];
     }
 }
 

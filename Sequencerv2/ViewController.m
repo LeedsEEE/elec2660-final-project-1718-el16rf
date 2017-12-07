@@ -16,22 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.data = [[DataModel alloc] init];
-    [self initTrackArrays];
     [self.data initElectroSamples];
     [self didMoveBPMSlider:self.BPMSlider];
-    self.data.sampleNumber = 0;
-    [self initButtonStyle];
     [self initControlStyle];
-    
-    self.playButton.enabled = YES;
-    self.pauseButton.enabled = NO;
-    self.stopButton.enabled = NO;
+    [self clearAll];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"SelectSampleStyle"]) {
+        [self didPressPause:nil];
+    }
 }
 
 - (IBAction)didPressPlay:(id)sender {
@@ -379,7 +380,7 @@
     }
 }
 
--(void) initTrackArrays {
+- (void) initTrackArrays {
     NSLog(@"initialising track arrays...");
     
     for (int i = 0; i < 16; i++) {
@@ -392,7 +393,7 @@
     }
 }
 
--(void) timerFire: (NSTimer *)timer {
+- (void) timerFire: (NSTimer *)timer {
     NSLog(@"timer fired; sample %ld", self.data.sampleNumber);
     
     for (UIButton *button in self.trackOneButtons) {
@@ -525,7 +526,7 @@
     }
 }
 
--(void) initButtonStyle {
+- (void) initButtonStyle {
     NSLog(@"button style initialised");
     
     for (UIButton *button in self.trackOneButtons) {
@@ -578,7 +579,7 @@
     }
 }
 
--(void) initControlStyle {
+- (void) initControlStyle {
     NSLog(@"control style initialised");
     
     self.playButton.layer.borderWidth = 1.0;
@@ -608,6 +609,12 @@
     self.BPMLabel.layer.borderWidth = 1.0;
     self.BPMLabel.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     self.BPMLabel.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+}
+
+- (void) clearAll {
+    [self initButtonStyle];
+    [self initTrackArrays];
+    [self didPressStop:nil];
 }
 
 @end

@@ -76,6 +76,8 @@
 - (IBAction)didPressBPMDecrement:(id)sender;
 - (IBAction)didPressBPMIncrement:(id)sender;
 
+- (void) clearAll;
+
 // Track buttons
 - (IBAction)didPressTrackOne:(UIButton *)sender;
 - (IBAction)didPressTrackTwo:(UIButton *)sender;

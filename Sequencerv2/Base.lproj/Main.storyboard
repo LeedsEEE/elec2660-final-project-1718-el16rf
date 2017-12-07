@@ -907,7 +907,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sample style..."/>
                                 <connections>
-                                    <segue destination="t0v-He-3Rm" kind="presentation" modalTransitionStyle="coverVertical" id="b4K-Qs-qZw"/>
+                                    <segue destination="t0v-He-3Rm" kind="presentation" identifier="SelectSampleStyle" modalTransitionStyle="coverVertical" id="b4K-Qs-qZw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1042,7 +1042,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleStyleCell" textLabel="rQ2-PU-oac" detailTextLabel="mEq-FF-Exo" style="IBUITableViewCellStyleValue2" id="pQR-Bz-9yq">
-                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="667" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pQR-Bz-9yq" id="ULW-bZ-lMR">
                                     <frame key="frameInset" width="667" height="43"/>
@@ -1065,7 +1065,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="SelectSampleStyle" modalTransitionStyle="crossDissolve" id="C81-hu-7Ei"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="ReturnMainView" modalTransitionStyle="crossDissolve" id="C81-hu-7Ei"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1075,6 +1075,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="wSA-Z7-x4N"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdM-V0-azz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
