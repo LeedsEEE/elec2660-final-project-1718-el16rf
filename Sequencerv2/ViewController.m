@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     self.data = [[DataModel alloc] init];
+    self.tableView = [[TableViewController alloc] init];
     
     [self.data initElectroSamples];
     [self didMoveBPMSlider:self.BPMSlider];
@@ -40,10 +41,10 @@
 // https://stackoverflow.com/questions/27392203/unwind-push-segue-from-uitableviewcell-tap
 - (IBAction)unwindToMainView: (UIStoryboardSegue *)segue {
     
-    self.tableViewCell = [[TableViewController alloc] init];
-    UITableViewCell *cell = [TableViewContr
     
-    [self performSegueWithIdentifier:@"UnwindMainView" sender:cell;
+    UITableViewCell *cell =
+    
+    [self performSegueWithIdentifier:@"UnwindMainView" sender:cell];
 }
 
 - (IBAction)didPressPlay:(id)sender {
