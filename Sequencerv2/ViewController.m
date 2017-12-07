@@ -31,7 +31,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"SelectSampleStyle"]) {
-        [self didPressPause:nil];
+        [self didPressStop:nil];
     }
 }
 

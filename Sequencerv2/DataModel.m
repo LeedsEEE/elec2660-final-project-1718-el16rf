@@ -53,7 +53,7 @@
     return self;
 }
 
--(void) initElectroSamples {
+- (void) initElectroSamples {
     NSLog(@"initialising electro samples...");
     
     // Track one
@@ -93,18 +93,164 @@
     [self.trackSix prepareToPlay];
 }
 
--(void) initDubstepSamples {
+- (void) initDubstepSamples {
     NSLog(@"initialising dubstep samples...");
+    
+    // Track one
+    NSString *trackOneFilePath = [[NSBundle mainBundle] pathForResource:@"dubstep_kick" ofType:@"wav"];
+    NSURL *trackOneFileURL = [[NSURL alloc] initFileURLWithPath:trackOneFilePath];
+    self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:trackOneFileURL error:nil];
+    [self.trackOne prepareToPlay];
+    
+    // Track two
+    NSString *trackTwoFilePath = [[NSBundle mainBundle] pathForResource:@"dubstep_snare" ofType:@"wav"];
+    NSURL *trackTwoFileURL = [[NSURL alloc] initFileURLWithPath:trackTwoFilePath];
+    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:trackTwoFileURL error:nil];
+    [self.trackTwo prepareToPlay];
+    
+    // Track three
+    NSString *trackThreeFilePath = [[NSBundle mainBundle] pathForResource:@"dubstep_clap" ofType:@"wav"];
+    NSURL *trackThreeFileURL = [[NSURL alloc] initFileURLWithPath:trackThreeFilePath];
+    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:trackThreeFileURL error:nil];
+    [self.trackThree prepareToPlay];
+    
+    // Track four
+    NSString *trackFourFilePath = [[NSBundle mainBundle] pathForResource:@"dubstep_closedhat" ofType:@"wav"];
+    NSURL *trackFourFileURL = [[NSURL alloc] initFileURLWithPath:trackFourFilePath];
+    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFourFileURL error:nil];
+    [self.trackFour prepareToPlay];
+    
+    // Track five
+    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"dubstep_openhat" ofType:@"wav"];
+    NSURL *trackFiveFileURL = [[NSURL alloc] initFileURLWithPath:trackFiveFilePath];
+    self.trackFive = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFiveFileURL error:nil];
+    [self.trackFive prepareToPlay];
+    
+    // Track six
+    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"dubstep_crash" ofType:@"wav"];
+    NSURL *trackSixFileURL = [[NSURL alloc] initFileURLWithPath:trackSixFilePath];
+    self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
+    [self.trackSix prepareToPlay];
 }
 
--(void) initAcousticSamples {
-    NSLog(@"initialising acoustic samples...");
+- (void) initDrumAndBassSamples {
+    NSLog(@"initialising drum & bass samples...");
+    
+    // Track one
+    NSString *trackOneFilePath = [[NSBundle mainBundle] pathForResource:@"drumandbass_kick" ofType:@"wav"];
+    NSURL *trackOneFileURL = [[NSURL alloc] initFileURLWithPath:trackOneFilePath];
+    self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:trackOneFileURL error:nil];
+    [self.trackOne prepareToPlay];
+    
+    // Track two
+    NSString *trackTwoFilePath = [[NSBundle mainBundle] pathForResource:@"drumandbass_snare" ofType:@"wav"];
+    NSURL *trackTwoFileURL = [[NSURL alloc] initFileURLWithPath:trackTwoFilePath];
+    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:trackTwoFileURL error:nil];
+    [self.trackTwo prepareToPlay];
+    
+    // Track three
+    NSString *trackThreeFilePath = [[NSBundle mainBundle] pathForResource:@"drumandbass_clap" ofType:@"wav"];
+    NSURL *trackThreeFileURL = [[NSURL alloc] initFileURLWithPath:trackThreeFilePath];
+    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:trackThreeFileURL error:nil];
+    [self.trackThree prepareToPlay];
+    
+    // Track four
+    NSString *trackFourFilePath = [[NSBundle mainBundle] pathForResource:@"drumandbass_closedhat" ofType:@"wav"];
+    NSURL *trackFourFileURL = [[NSURL alloc] initFileURLWithPath:trackFourFilePath];
+    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFourFileURL error:nil];
+    [self.trackFour prepareToPlay];
+    
+    // Track five
+    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"drumandbass_openhat" ofType:@"wav"];
+    NSURL *trackFiveFileURL = [[NSURL alloc] initFileURLWithPath:trackFiveFilePath];
+    self.trackFive = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFiveFileURL error:nil];
+    [self.trackFive prepareToPlay];
+    
+    // Track six
+    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"drumandbass_crash" ofType:@"wav"];
+    NSURL *trackSixFileURL = [[NSURL alloc] initFileURLWithPath:trackSixFilePath];
+    self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
+    [self.trackSix prepareToPlay];
 }
 
--(void) initHipHopSamples {
+- (void) initHipHopSamples {
     NSLog(@"initialising hip hop samples...");
+    
+    // Track one
+    NSString *trackOneFilePath = [[NSBundle mainBundle] pathForResource:@"hiphop_kick" ofType:@"wav"];
+    NSURL *trackOneFileURL = [[NSURL alloc] initFileURLWithPath:trackOneFilePath];
+    self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:trackOneFileURL error:nil];
+    [self.trackOne prepareToPlay];
+    
+    // Track two
+    NSString *trackTwoFilePath = [[NSBundle mainBundle] pathForResource:@"hiphop_snare" ofType:@"wav"];
+    NSURL *trackTwoFileURL = [[NSURL alloc] initFileURLWithPath:trackTwoFilePath];
+    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:trackTwoFileURL error:nil];
+    [self.trackTwo prepareToPlay];
+    
+    // Track three
+    NSString *trackThreeFilePath = [[NSBundle mainBundle] pathForResource:@"hiphop_clap" ofType:@"wav"];
+    NSURL *trackThreeFileURL = [[NSURL alloc] initFileURLWithPath:trackThreeFilePath];
+    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:trackThreeFileURL error:nil];
+    [self.trackThree prepareToPlay];
+    
+    // Track four
+    NSString *trackFourFilePath = [[NSBundle mainBundle] pathForResource:@"hiphop_closedhat" ofType:@"wav"];
+    NSURL *trackFourFileURL = [[NSURL alloc] initFileURLWithPath:trackFourFilePath];
+    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFourFileURL error:nil];
+    [self.trackFour prepareToPlay];
+    
+    // Track five
+    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"hiphop_openhat" ofType:@"wav"];
+    NSURL *trackFiveFileURL = [[NSURL alloc] initFileURLWithPath:trackFiveFilePath];
+    self.trackFive = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFiveFileURL error:nil];
+    [self.trackFive prepareToPlay];
+    
+    // Track six
+    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"hiphop_crash" ofType:@"wav"];
+    NSURL *trackSixFileURL = [[NSURL alloc] initFileURLWithPath:trackSixFilePath];
+    self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
+    [self.trackSix prepareToPlay];
 }
 
-
+- (void) initFutureBassSamples {
+    NSLog(@"initialising future bass samples...");
+    
+    // Track one
+    NSString *trackOneFilePath = [[NSBundle mainBundle] pathForResource:@"futurebass_kick" ofType:@"aif"];
+    NSURL *trackOneFileURL = [[NSURL alloc] initFileURLWithPath:trackOneFilePath];
+    self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:trackOneFileURL error:nil];
+    [self.trackOne prepareToPlay];
+    
+    // Track two
+    NSString *trackTwoFilePath = [[NSBundle mainBundle] pathForResource:@"futurebass_snare" ofType:@"aif"];
+    NSURL *trackTwoFileURL = [[NSURL alloc] initFileURLWithPath:trackTwoFilePath];
+    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:trackTwoFileURL error:nil];
+    [self.trackTwo prepareToPlay];
+    
+    // Track three
+    NSString *trackThreeFilePath = [[NSBundle mainBundle] pathForResource:@"futurebass_clap" ofType:@"aif"];
+    NSURL *trackThreeFileURL = [[NSURL alloc] initFileURLWithPath:trackThreeFilePath];
+    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:trackThreeFileURL error:nil];
+    [self.trackThree prepareToPlay];
+    
+    // Track four
+    NSString *trackFourFilePath = [[NSBundle mainBundle] pathForResource:@"futurebass_closedhat" ofType:@"aif"];
+    NSURL *trackFourFileURL = [[NSURL alloc] initFileURLWithPath:trackFourFilePath];
+    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFourFileURL error:nil];
+    [self.trackFour prepareToPlay];
+    
+    // Track five
+    NSString *trackFiveFilePath = [[NSBundle mainBundle] pathForResource:@"futurebass_openhat" ofType:@"aif"];
+    NSURL *trackFiveFileURL = [[NSURL alloc] initFileURLWithPath:trackFiveFilePath];
+    self.trackFive = [[AVAudioPlayer alloc] initWithContentsOfURL:trackFiveFileURL error:nil];
+    [self.trackFive prepareToPlay];
+    
+    // Track six
+    NSString *trackSixFilePath = [[NSBundle mainBundle] pathForResource:@"futurebass_crash" ofType:@"aif"];
+    NSURL *trackSixFileURL = [[NSURL alloc] initFileURLWithPath:trackSixFilePath];
+    self.trackSix = [[AVAudioPlayer alloc] initWithContentsOfURL:trackSixFileURL error:nil];
+    [self.trackSix prepareToPlay];
+}
 
 @end

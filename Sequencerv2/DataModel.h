@@ -34,10 +34,10 @@
 /////////////
 // METHODS //
 /////////////
-
--(void) initElectroSamples;
--(void) initDubstepSamples;
--(void) initAcousticSamples;
--(void) initHipHopSamples;
+- (void) initElectroSamples;
+- (void) initDubstepSamples;
+- (void) initDrumAndBassSamples;
+- (void) initHipHopSamples;
+- (void) initFutureBassSamples;
 
 @end
