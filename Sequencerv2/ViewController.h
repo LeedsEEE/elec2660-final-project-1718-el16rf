@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DataModel.h"
+#import "TableViewController.h"
 
 @interface ViewController : UIViewController {
     
@@ -30,6 +31,7 @@
 
 // Object definitions
 @property DataModel *data;
+@property TableViewController *tableViewCell;
 
 @property BOOL *electroSelected;
 @property BOOL *dubstepSelected;

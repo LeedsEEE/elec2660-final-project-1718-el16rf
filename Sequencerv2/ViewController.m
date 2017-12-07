@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     self.data = [[DataModel alloc] init];
+    
     [self.data initElectroSamples];
     [self didMoveBPMSlider:self.BPMSlider];
     [self initControlStyle];
@@ -33,6 +34,16 @@
     if ([[segue identifier] isEqualToString:@"SelectSampleStyle"]) {
         [self didPressStop:nil];
     }
+}
+
+// https://stackoverflow.com/questions/12509422/how-to-perform-unwind-segue-programmatically
+// https://stackoverflow.com/questions/27392203/unwind-push-segue-from-uitableviewcell-tap
+- (IBAction)unwindToMainView: (UIStoryboardSegue *)segue {
+    
+    self.tableViewCell = [[TableViewController alloc] init];
+    UITableViewCell *cell = [TableViewContr
+    
+    [self performSegueWithIdentifier:@"UnwindMainView" sender:cell;
 }
 
 - (IBAction)didPressPlay:(id)sender {

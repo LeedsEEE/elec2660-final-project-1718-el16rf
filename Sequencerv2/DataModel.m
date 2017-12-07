@@ -10,9 +10,9 @@
 
 @implementation DataModel
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
+    
     if (self) {
         self.samples = [NSMutableArray array];
         SampleStyle *electro = [[SampleStyle alloc] init];

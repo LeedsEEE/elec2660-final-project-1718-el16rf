@@ -1041,7 +1041,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleStyleCell" textLabel="rQ2-PU-oac" detailTextLabel="mEq-FF-Exo" style="IBUITableViewCellStyleValue2" id="pQR-Bz-9yq">
-                                <rect key="frame" x="0.0" y="28" width="667" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="667" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pQR-Bz-9yq" id="ULW-bZ-lMR">
                                     <frame key="frameInset" width="667" height="43"/>
@@ -1063,9 +1063,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ReturnMainView" id="bjB-fs-kdI"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -1074,8 +1071,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="wSA-Z7-x4N"/>
+                    <connections>
+                        <segue destination="1NJ-PL-JUx" kind="unwind" identifier="UnwindMainView" unwindAction="unwindToMainView:triggerPress:" id="zMc-Rc-Yh4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kdM-V0-azz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1NJ-PL-JUx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="269" y="-618"/>
         </scene>
@@ -1083,7 +1084,7 @@
         <scene sceneID="Tge-zs-DGs">
             <objects>
                 <navigationController id="LcQ-Uc-gSm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="uvW-lG-O3x">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="uvW-lG-O3x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1108,7 +1109,4 @@
         <image name="play.png" width="512" height="512"/>
         <image name="stop.png" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bjB-fs-kdI"/>
-    </inferredMetricsTieBreakers>
 </document>
