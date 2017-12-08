@@ -10,6 +10,8 @@
 
 @interface SampleStyle : NSObject
 
+// PROPERTIES
+// Table view cell information
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *style;
 

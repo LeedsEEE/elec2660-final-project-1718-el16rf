@@ -17,20 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // https://stackoverflow.com/questions/9239067/how-to-hide-a-navigation-bar-from-one-particular-view-controller
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
     self.data = [[DataModel alloc] init];
     
     [self.data initElectroSamples];
     [self didMoveBPMSlider:self.BPMSlider];
     [self initControlStyle];
     [self clearAll];
+    
+    // https://stackoverflow.com/questions/9239067/how-to-hide-a-navigation-bar-from-one-particular-view-controller
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -38,6 +37,8 @@
         [self didPressStop:nil];
     }
 }
+
+#pragma mark - Global UI Controls
 
 - (IBAction)didPressPlay:(id)sender {
     NSLog(@"play button pressed");
@@ -88,7 +89,9 @@
 - (IBAction)didPressStop:(id)sender {
     NSLog(@"stop button pressed");
     
+    self.data.sampleNumber = 0;
     self.data.playing = NO;
+    
     [self.data.timer invalidate];
     
     [self.data.trackOne stop];
@@ -119,8 +122,6 @@
     self.playButton.enabled = YES;
     self.pauseButton.enabled = NO;
     
-    self.data.sampleNumber = 0;
-    
     for (UIButton *button in self.trackOneButtons) {
         button.alpha = 0.5;
     }
@@ -148,6 +149,7 @@
 
 - (IBAction)didPressClear:(id)sender {
     NSLog(@"clear button pressed");
+    
     [self didPressStop:nil];
     [self initTrackArrays];
     [self initButtonStyle];
@@ -155,6 +157,7 @@
 
 - (IBAction)didMoveBPMSlider:(UISlider *)sender {
     self.data.BPM = self.BPMSlider.value;
+    
     NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
     
     if (self.data.playing == YES) {     // if currently playing
@@ -168,6 +171,7 @@
 - (IBAction)didPressBPMDecrement:(id)sender {
     self.data.BPM--;
     self.BPMSlider.value--;
+    
     NSLog(@"BPM decrement button pressed; BPM = %d", self.data.BPM);
     
     if (self.data.playing == YES) {
@@ -181,6 +185,7 @@
 - (IBAction)didPressBPMIncrement:(id)sender {
     self.data.BPM++;
     self.BPMSlider.value++;
+    
     NSLog(@"BPM increment button pressed; BPM = %d", self.data.BPM);
     
     if (self.data.playing == YES) {
@@ -191,25 +196,30 @@
     self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
+#pragma mark - Tracks
+
 // track 1
 - (IBAction)didPressTrackOne:(UIButton *)sender {
     // if button in the array is selected
     if ([sender isSelected]) {
         // accompanying NSLog message showing which button in the array is deselected
         NSLog(@"track 1; button %ld selected - state %d", sender.tag, sender.selected);
+        
         // 1 written to the array at the index specified by the button tag
         trackOneButtonStateArray[sender.tag] = 1;
+        
         // colour background
         // http://uicolor.xyz/#/hex-to-ui
         sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.44 blue:0.71 alpha:1.0].CGColor;
-        
         // button bool selected state changed
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 1; button %ld deselected - state %d", sender.tag, sender.selected);
+        
         trackOneButtonStateArray[sender.tag] = 0;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
@@ -219,14 +229,18 @@
 - (IBAction)didPressTrackTwo:(UIButton *)sender {
     if ([sender isSelected]) {
         NSLog(@"track 2; button %ld selected - state %d", sender.tag, sender.selected);
+        
         trackTwoButtonStateArray[sender.tag] = 1;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.54 blue:0.71 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 2; button %ld deselected - state %d", sender.tag, sender.selected);
+        
         trackTwoButtonStateArray[sender.tag] = 0;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
@@ -236,14 +250,18 @@
 - (IBAction)didPressTrackThree:(UIButton *)sender {
     if ([sender isSelected]) {
         NSLog(@"track 3; button %ld selected - state %d", sender.tag, sender.selected);
+        
         trackThreeButtonStateArray[sender.tag] = 1;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.69 blue:0.71 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 3; button %ld deselected - state %d", sender.tag, sender.selected);
+        
         trackThreeButtonStateArray[sender.tag] = 0;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
@@ -253,14 +271,18 @@
 - (IBAction)didPressTrackFour:(UIButton *)sender {
     if ([sender isSelected]) {
         NSLog(@"track 4; button %ld selected - state %d", sender.tag, sender.selected);
+        
         trackFourButtonStateArray[sender.tag] = 1;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.71 blue:0.57 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 4; button %ld deselected - state %d", sender.tag, sender.selected);
+        
         trackFourButtonStateArray[sender.tag] = 0;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
@@ -270,14 +292,18 @@
 - (IBAction)didPressTrackFive:(UIButton *)sender {
     if ([sender isSelected]) {
         NSLog(@"track 5; button %ld selected - state %d", sender.tag, sender.selected);
+        
         trackFiveButtonStateArray[sender.tag] = 1;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.32 green:0.71 blue:0.37 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 5; button %ld deselected - state %d", sender.tag, sender.selected);
+        
         trackFiveButtonStateArray[sender.tag] = 0;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
@@ -287,14 +313,18 @@
 - (IBAction)didPressTrackSix:(UIButton *)sender {
     if ([sender isSelected]) {
         NSLog(@"track 6; button %ld selected - state %d", sender.tag, sender.selected);
+        
         trackSixButtonStateArray[sender.tag] = 1;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.44 green:0.73 blue:0.32 alpha:1.0].CGColor;
         sender.selected = NO;
     }
     
     else {
         NSLog(@"track 6; button %ld deselected - state %d", sender.tag, sender.selected);
+        
         trackSixButtonStateArray[sender.tag] = 0;
+        
         sender.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
         sender.selected = YES;
     }
@@ -613,6 +643,10 @@
     self.BPMLabel.layer.borderWidth = 2.0;
     self.BPMLabel.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     self.BPMLabel.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+    
+    self.drumStyleButton.layer.borderWidth = 2.0;
+    self.drumStyleButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
+    self.drumStyleButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
 }
 
 - (void) clearAll {

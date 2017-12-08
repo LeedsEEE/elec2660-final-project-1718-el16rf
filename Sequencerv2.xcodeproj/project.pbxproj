@@ -47,13 +47,9 @@
 		9FC79F361FDA972E0011D335 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F271FDA972E0011D335 /* clear.png */; };
 		9FC79F371FDA972E0011D335 /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F281FDA972E0011D335 /* decrement.png */; };
 		9FC79F381FDA972E0011D335 /* increment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F291FDA972E0011D335 /* increment.png */; };
-		9FC79F391FDA972E0011D335 /* nslogic app icon black glyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2A1FDA972E0011D335 /* nslogic app icon black glyph.png */; };
-		9FC79F3A1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2B1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png */; };
-		9FC79F3B1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2C1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png */; };
 		9FC79F3C1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2D1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png */; };
 		9FC79F3D1FDA972E0011D335 /* nslogic app icon with drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2E1FDA972E0011D335 /* nslogic app icon with drop shadow.png */; };
 		9FC79F3E1FDA972E0011D335 /* nslogic app icon without drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2F1FDA972E0011D335 /* nslogic app icon without drop shadow.png */; };
-		9FC79F3F1FDA972E0011D335 /* nslogic launchscreen transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F301FDA972E0011D335 /* nslogic launchscreen transparent.png */; };
 		9FC79F401FDA972E0011D335 /* nslogic launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F311FDA972E0011D335 /* nslogic launchscreen.png */; };
 		9FC79F411FDA972E0011D335 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F321FDA972E0011D335 /* pause.png */; };
 		9FC79F421FDA972E0011D335 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F331FDA972E0011D335 /* play.png */; };
@@ -72,6 +68,10 @@
 		9FC79F6A1FDAC97A0011D335 /* futurebass_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F641FDAC97A0011D335 /* futurebass_kick.wav */; };
 		9FC79F6B1FDAC97A0011D335 /* futurebass_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F651FDAC97A0011D335 /* futurebass_openhat.wav */; };
 		9FC79F6C1FDAC97A0011D335 /* futurebass_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F661FDAC97A0011D335 /* futurebass_snare.wav */; };
+		9FC79F711FDACF300011D335 /* nslogic app icon transparent black glyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F6D1FDACF300011D335 /* nslogic app icon transparent black glyph.png */; };
+		9FC79F721FDACF300011D335 /* nslogic app icon transparent with drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F6E1FDACF300011D335 /* nslogic app icon transparent with drop shadow.png */; };
+		9FC79F731FDACF300011D335 /* nslogic app icon transparent without drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F6F1FDACF300011D335 /* nslogic app icon transparent without drop shadow.png */; };
+		9FC79F741FDACF300011D335 /* nslogic launchscreen transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F701FDACF300011D335 /* nslogic launchscreen transparent.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,13 +143,9 @@
 		9FC79F271FDA972E0011D335 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clear.png; path = Media/Images/clear.png; sourceTree = "<group>"; };
 		9FC79F281FDA972E0011D335 /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = decrement.png; path = Media/Images/decrement.png; sourceTree = "<group>"; };
 		9FC79F291FDA972E0011D335 /* increment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = increment.png; path = Media/Images/increment.png; sourceTree = "<group>"; };
-		9FC79F2A1FDA972E0011D335 /* nslogic app icon black glyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon black glyph.png"; path = "Media/Images/nslogic app icon black glyph.png"; sourceTree = "<group>"; };
-		9FC79F2B1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent with drop shadow.png"; path = "Media/Images/nslogic app icon transparent with drop shadow.png"; sourceTree = "<group>"; };
-		9FC79F2C1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent without drop shadow.png"; path = "Media/Images/nslogic app icon transparent without drop shadow.png"; sourceTree = "<group>"; };
 		9FC79F2D1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon white glyph on colour example.png"; path = "Media/Images/nslogic app icon white glyph on colour example.png"; sourceTree = "<group>"; };
 		9FC79F2E1FDA972E0011D335 /* nslogic app icon with drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon with drop shadow.png"; path = "Media/Images/nslogic app icon with drop shadow.png"; sourceTree = "<group>"; };
 		9FC79F2F1FDA972E0011D335 /* nslogic app icon without drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon without drop shadow.png"; path = "Media/Images/nslogic app icon without drop shadow.png"; sourceTree = "<group>"; };
-		9FC79F301FDA972E0011D335 /* nslogic launchscreen transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic launchscreen transparent.png"; path = "Media/Images/nslogic launchscreen transparent.png"; sourceTree = "<group>"; };
 		9FC79F311FDA972E0011D335 /* nslogic launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic launchscreen.png"; path = "Media/Images/nslogic launchscreen.png"; sourceTree = "<group>"; };
 		9FC79F321FDA972E0011D335 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Media/Images/pause.png; sourceTree = "<group>"; };
 		9FC79F331FDA972E0011D335 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Media/Images/play.png; sourceTree = "<group>"; };
@@ -168,6 +164,10 @@
 		9FC79F641FDAC97A0011D335 /* futurebass_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = futurebass_kick.wav; path = Media/Samples/KSHMR/futurebass_kick.wav; sourceTree = "<group>"; };
 		9FC79F651FDAC97A0011D335 /* futurebass_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = futurebass_openhat.wav; path = Media/Samples/KSHMR/futurebass_openhat.wav; sourceTree = "<group>"; };
 		9FC79F661FDAC97A0011D335 /* futurebass_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = futurebass_snare.wav; path = Media/Samples/KSHMR/futurebass_snare.wav; sourceTree = "<group>"; };
+		9FC79F6D1FDACF300011D335 /* nslogic app icon transparent black glyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent black glyph.png"; path = "Media/Images/nslogic app icon transparent black glyph.png"; sourceTree = "<group>"; };
+		9FC79F6E1FDACF300011D335 /* nslogic app icon transparent with drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent with drop shadow.png"; path = "Media/Images/nslogic app icon transparent with drop shadow.png"; sourceTree = "<group>"; };
+		9FC79F6F1FDACF300011D335 /* nslogic app icon transparent without drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent without drop shadow.png"; path = "Media/Images/nslogic app icon transparent without drop shadow.png"; sourceTree = "<group>"; };
+		9FC79F701FDACF300011D335 /* nslogic launchscreen transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic launchscreen transparent.png"; path = "Media/Images/nslogic launchscreen transparent.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,13 +368,13 @@
 				9FC79F271FDA972E0011D335 /* clear.png */,
 				9FC79F281FDA972E0011D335 /* decrement.png */,
 				9FC79F291FDA972E0011D335 /* increment.png */,
-				9FC79F2A1FDA972E0011D335 /* nslogic app icon black glyph.png */,
-				9FC79F2B1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png */,
-				9FC79F2C1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png */,
 				9FC79F2D1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png */,
 				9FC79F2E1FDA972E0011D335 /* nslogic app icon with drop shadow.png */,
 				9FC79F2F1FDA972E0011D335 /* nslogic app icon without drop shadow.png */,
-				9FC79F301FDA972E0011D335 /* nslogic launchscreen transparent.png */,
+				9FC79F6D1FDACF300011D335 /* nslogic app icon transparent black glyph.png */,
+				9FC79F6E1FDACF300011D335 /* nslogic app icon transparent with drop shadow.png */,
+				9FC79F6F1FDACF300011D335 /* nslogic app icon transparent without drop shadow.png */,
+				9FC79F701FDACF300011D335 /* nslogic launchscreen transparent.png */,
 				9FC79F311FDA972E0011D335 /* nslogic launchscreen.png */,
 				9FC79F321FDA972E0011D335 /* pause.png */,
 				9FC79F331FDA972E0011D335 /* play.png */,
@@ -515,13 +515,13 @@
 				9FC79F181FDA96FC0011D335 /* dubstep_openhat.wav in Resources */,
 				9FC79F241FDA97080011D335 /* hiphop_openhat.wav in Resources */,
 				9FC79F021FDA96E90011D335 /* electro_clap.wav in Resources */,
+				9FC79F741FDACF300011D335 /* nslogic launchscreen transparent.png in Resources */,
 				9FC79EF91FDA96D80011D335 /* drumandbass_kick.wav in Resources */,
 				9FC79F351FDA972E0011D335 /* background.png in Resources */,
 				9FC79F3C1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png in Resources */,
 				9FC79F041FDA96E90011D335 /* electro_crash.wav in Resources */,
+				9FC79F711FDACF300011D335 /* nslogic app icon transparent black glyph.png in Resources */,
 				9FC79F4F1FDA9E8C0011D335 /* Icon-App-29x29@3x.png in Resources */,
-				9FC79F3F1FDA972E0011D335 /* nslogic launchscreen transparent.png in Resources */,
-				9FC79F3B1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png in Resources */,
 				9FC79EF81FDA96D80011D335 /* drumandbass_crash.wav in Resources */,
 				9FC79F431FDA972E0011D335 /* stop.png in Resources */,
 				9FC79F6B1FDAC97A0011D335 /* futurebass_openhat.wav in Resources */,
@@ -533,12 +533,12 @@
 				9FC79F521FDA9E8C0011D335 /* Icon-App-60x60@3x.png in Resources */,
 				9FC79EF61FDA96D80011D335 /* drumandbass_clap.wav in Resources */,
 				9FC79F031FDA96E90011D335 /* electro_closedhat.wav in Resources */,
+				9FC79F721FDACF300011D335 /* nslogic app icon transparent with drop shadow.png in Resources */,
 				9FC79F4C1FDA9E8C0011D335 /* Icon-App-20x20@2x.png in Resources */,
 				9FC79F071FDA96E90011D335 /* electro_snare.wav in Resources */,
 				9FC79EFB1FDA96D80011D335 /* drumandbass_snare.wav in Resources */,
 				9FC79F251FDA97080011D335 /* hiphop_snare.wav in Resources */,
 				9FC79F401FDA972E0011D335 /* nslogic launchscreen.png in Resources */,
-				9FC79F3A1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png in Resources */,
 				9FC79F051FDA96E90011D335 /* electro_kick.wav in Resources */,
 				9FC79F541FDA9EB50011D335 /* Icon-App-40x40@3x.png in Resources */,
 				9FC79F671FDAC97A0011D335 /* futurebass_clap.wav in Resources */,
@@ -549,9 +549,9 @@
 				9FC79F3D1FDA972E0011D335 /* nslogic app icon with drop shadow.png in Resources */,
 				9FC79F211FDA97080011D335 /* hiphop_closedhat.wav in Resources */,
 				9FC79F6C1FDAC97A0011D335 /* futurebass_snare.wav in Resources */,
-				9FC79F391FDA972E0011D335 /* nslogic app icon black glyph.png in Resources */,
 				9FC79F161FDA96FC0011D335 /* dubstep_crash.wav in Resources */,
 				9FC79F361FDA972E0011D335 /* clear.png in Resources */,
+				9FC79F731FDACF300011D335 /* nslogic app icon transparent without drop shadow.png in Resources */,
 				9FC79F511FDA9E8C0011D335 /* Icon-App-60x60@2x.png in Resources */,
 				9FC79F681FDAC97A0011D335 /* futurebass_closedhat.wav in Resources */,
 				9FC79F421FDA972E0011D335 /* play.png in Resources */,

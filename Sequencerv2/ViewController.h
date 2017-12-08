@@ -12,10 +12,7 @@
 
 @interface ViewController : UIViewController {
     
-    ///////////////
-    // VARIABLES //
-    ///////////////
-    
+    // VARIABLES
     // Track state arrays
     NSInteger trackOneButtonStateArray[16];
     NSInteger trackTwoButtonStateArray[16];
@@ -25,18 +22,16 @@
     NSInteger trackSixButtonStateArray[16];
 }
 
-////////////////
-// PROPERTIES //
-////////////////
-
-// Object definitions
+// PROPERTIES
+// Object declarations
 @property DataModel *data;
 
+// Sample style selection states
 @property BOOL *electroSelected;
 @property BOOL *dubstepSelected;
-@property BOOL *acousticSelected;
+@property BOOL *drumAndBassSelected;
 @property BOOL *hipHopSelected;
-
+@property BOOL *hfutureBassSelected;
 
 // Global controls
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
@@ -47,6 +42,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *decrementButton;
 @property (weak, nonatomic) IBOutlet UIButton *incrementButton;
 @property (weak, nonatomic) IBOutlet UILabel *BPMLabel;
+@property (weak, nonatomic) IBOutlet UIButton *drumStyleButton;
 
 // Track buttons
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneButtons;
@@ -64,10 +60,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *trackFiveVolumeSlider;
 @property (weak, nonatomic) IBOutlet UISlider *trackSixVolumeSlider;
 
-/////////////
-// METHODS //
-/////////////
-
+// METHODS
 // Global controls
 - (IBAction)didPressPlay:(id)sender;
 - (IBAction)didPressPause:(id)sender;
@@ -76,8 +69,6 @@
 - (IBAction)didMoveBPMSlider:(UISlider *)sender;
 - (IBAction)didPressBPMDecrement:(id)sender;
 - (IBAction)didPressBPMIncrement:(id)sender;
-
-- (void) clearAll;
 
 // Track buttons
 - (IBAction)didPressTrackOne:(UIButton *)sender;
@@ -103,5 +94,7 @@
 - (IBAction)didToggleTrackFive:(UISwitch *)sender;
 - (IBAction)didToggleTrackSix:(UISwitch *)sender;
 
-@end
+// Void functions
+- (void) clearAll;
 
+@end

@@ -12,10 +12,7 @@
 
 @interface DataModel : NSObject
 
-////////////////
-// PROPERTIES //
-////////////////
-
+// PROPERTIES
 // Global
 @property int BPM;
 @property (strong, nonatomic) NSTimer *timer;
@@ -31,9 +28,8 @@
 @property (strong, nonatomic) AVAudioPlayer *trackFive;
 @property (strong, nonatomic) AVAudioPlayer *trackSix;
 
-/////////////
-// METHODS //
-/////////////
+// METHODS
+// Initialse each audio player style
 - (void) initElectroSamples;
 - (void) initDubstepSamples;
 - (void) initDrumAndBassSamples;
