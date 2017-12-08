@@ -13,6 +13,7 @@
 
 @interface TableViewController : UITableViewController
 
+// PROPERTIES
 // Object declarations
 @property (strong, nonatomic) DataModel *data;
 

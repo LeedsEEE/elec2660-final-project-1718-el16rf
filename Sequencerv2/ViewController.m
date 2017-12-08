@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // create a DataModel object
     self.data = [[DataModel alloc] init];
     
     [self.data initElectroSamples];
@@ -32,31 +33,48 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - Navigation
+
+// functions called on segue with alternate identifiers
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"SelectSampleStyle"]) {
         [self didPressStop:nil];
     }
+    
+    if ([[segue identifier] isEqualToString:@"Credits"]) {
+        [self didPressStop:nil];
+    }
 }
 
-#pragma mark - Global UI Controls
+#pragma mark - Global UI Elements
 
+// play button pressed
 - (IBAction)didPressPlay:(id)sender {
     NSLog(@"play button pressed");
     
+    // bool updated
     self.data.playing = YES;
+    // timer started
     self.data.timer = [NSTimer scheduledTimerWithTimeInterval:15.0/self.data.BPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
+    // play sender disabled after press to prevent multiple timer triggers
     ((UIButton *)sender).enabled = NO;
+    // pause enabled
     self.pauseButton.enabled = YES;
+    // stop enabled
     self.stopButton.enabled = YES;
 }
 
+// pause button pressed
 - (IBAction)didPressPause:(id)sender {
     NSLog(@"pause button pressed");
     
     self.data.playing = NO;
+    
+    // timer invalidated
     [self.data.timer invalidate];
     
+    // track stopped, time reset to 0 and prepared to play
     [self.data.trackOne stop];
     self.data.trackOne.currentTime = 0.0;
     [self.data.trackOne prepareToPlay];
@@ -81,14 +99,19 @@
     self.data.trackSix.currentTime = 0.0;
     [self.data.trackSix prepareToPlay];
     
+    // pause sender disabled
     ((UIButton *)sender).enabled = NO;
+    // play button enabled
     self.playButton.enabled = YES;
+    // stop button enabled
     self.stopButton.enabled = YES;
 }
 
+// stop button preseed
 - (IBAction)didPressStop:(id)sender {
     NSLog(@"stop button pressed");
     
+    // sample number reset to 0 so playback starts from the initial position
     self.data.sampleNumber = 0;
     self.data.playing = NO;
     
@@ -118,10 +141,14 @@
     self.data.trackSix.currentTime = 0.0;
     [self.data.trackSix prepareToPlay];
     
+    // stop sender disabled
     ((UIButton *)sender).enabled = NO;
+    // play button enabled
     self.playButton.enabled = YES;
+    // pause button disabled
     self.pauseButton.enabled = NO;
     
+    // set alpha for buttons in array
     for (UIButton *button in self.trackOneButtons) {
         button.alpha = 0.5;
     }
@@ -147,6 +174,7 @@
     }
 }
 
+// clear button pressed
 - (IBAction)didPressClear:(id)sender {
     NSLog(@"clear button pressed");
     
@@ -160,14 +188,17 @@
     
     NSLog(@"BPM slider moved; BPM = %d", self.data.BPM);
     
-    if (self.data.playing == YES) {     // if currently playing
+    // if currently playing
+    if (self.data.playing == YES) {
         [self.data.timer invalidate];
         [self didPressPlay:nil];
     }
     
+    // BPMLabel text updated
     self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
+// decrement button pressed
 - (IBAction)didPressBPMDecrement:(id)sender {
     self.data.BPM--;
     self.BPMSlider.value--;
@@ -182,6 +213,7 @@
     self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
+// increment button pressed
 - (IBAction)didPressBPMIncrement:(id)sender {
     self.data.BPM++;
     self.BPMSlider.value++;
@@ -196,13 +228,12 @@
     self.BPMLabel.text = [NSString stringWithFormat:@"%d bpm", self.data.BPM];
 }
 
-#pragma mark - Tracks
+#pragma mark - Track UI Elements
 
 // track 1
 - (IBAction)didPressTrackOne:(UIButton *)sender {
     // if button in the array is selected
     if ([sender isSelected]) {
-        // accompanying NSLog message showing which button in the array is deselected
         NSLog(@"track 1; button %ld selected - state %d", sender.tag, sender.selected);
         
         // 1 written to the array at the index specified by the button tag
@@ -331,6 +362,7 @@
 }
 
 - (IBAction)didMoveTrackOneVolumeSlider:(UISlider *)sender {
+    // track volume property controlled by slider value
     self.data.trackOne.volume = self.trackOneVolumeSlider.value;
 }
 
@@ -355,11 +387,15 @@
 }
 
 - (IBAction)didToggleTrackOne:(UISwitch *)sender {
+    // if switch is enabled
     if ([sender isOn]) {
+        // track volume set to equal the slider value
         self.data.trackOne.volume = self.trackOneVolumeSlider.value;
     }
     
+    // if switch is disabled
     else {
+        // track volume set to 0
         self.data.trackOne.volume = 0.0;
     }
 }
@@ -414,9 +450,13 @@
     }
 }
 
+#pragma mark - Void and Initialisation Functions
+
+// initialise track array states
 - (void) initTrackArrays {
     NSLog(@"initialising track arrays...");
     
+    // for loop sets each array index to 0 state - 0 through 15
     for (int i = 0; i < 16; i++) {
         trackOneButtonStateArray[i] = 0;
         trackTwoButtonStateArray[i] = 0;
@@ -427,6 +467,7 @@
     }
 }
 
+// timer triggered events
 - (void) timerFire: (NSTimer *)timer {
     NSLog(@"timer fired; sample %ld", self.data.sampleNumber);
     
@@ -560,13 +601,18 @@
     }
 }
 
+// initialise button aesthetic
 - (void) initButtonStyle {
     NSLog(@"button style initialised");
     
+    // for buttons in array
     for (UIButton *button in self.trackOneButtons) {
+        // state adjusted
         button.selected = YES;
+        // alpha adjusted
         button.alpha = 0.5;
         // https://stackoverflow.com/questions/3330378/cocoa-touch-how-to-change-uiviews-border-color-and-thickness
+        // button border width, colour and background colour set
         button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
         button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
@@ -613,9 +659,11 @@
     }
 }
 
+// initialise control aesthetic
 - (void) initControlStyle {
     NSLog(@"control style initialised");
     
+    // button border width, colour and background colour set
     self.playButton.layer.borderWidth = 2.0;
     self.playButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     self.playButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
@@ -649,6 +697,7 @@
     self.drumStyleButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
 }
 
+// master clear function
 - (void) clearAll {
     [self initButtonStyle];
     [self initTrackArrays];

@@ -31,7 +31,7 @@
 @property BOOL *dubstepSelected;
 @property BOOL *drumAndBassSelected;
 @property BOOL *hipHopSelected;
-@property BOOL *hfutureBassSelected;
+@property BOOL *futureBassSelected;
 
 // Global controls
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
