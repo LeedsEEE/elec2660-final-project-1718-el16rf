@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    
     self.data = [[DataModel alloc] init];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -49,6 +51,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SampleStyleCell" forIndexPath:indexPath];
+    
+    cell.tag = indexPath.row;
     
     // Configure the cell...
     if (indexPath.section == 0) {
@@ -98,12 +102,54 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
+- (IBAction)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    ViewController *vc1 = (ViewController *)segue.destinationViewController;
-    NSIndexPath *selectedPath = [self.tableView indexPathForCell:sender];
+    // https://stackoverflow.com/questions/12509422/how-to-perform-unwind-segue-programmatically
+    // https://stackoverflow.com/questions/27392203/unwind-push-segue-from-uitableviewcell-tap
+    // https://developer.apple.com/library/content/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html
+    if ([[segue identifier] isEqualToString:@"ReturnMainView"]) {
+        
+        ViewController *destinationViewController = [segue destinationViewController];
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        
+        if (cell.tag == 0) {
+            NSLog(@"cell %ld pressed", cell.tag);
+            [destinationViewController.data initElectroSamples];
+        }
+        
+        else if (cell.tag == 1) {
+            NSLog(@"cell %ld pressed", cell.tag);
+            [destinationViewController.data initDubstepSamples];
+        }
+        
+        else if (cell.tag == 2) {
+            NSLog(@"cell %ld pressed", cell.tag);
+            [destinationViewController.data initDrumAndBassSamples];
+        }
+        
+        else if (cell.tag == 3) {
+            NSLog(@"cell %ld pressed", cell.tag);
+            [destinationViewController.data initHipHopSamples];
+        }
+        
+        else if (cell.tag == 4) {
+            NSLog(@"cell %ld pressed", cell.tag);
+            [destinationViewController.data initFutureBassSamples];
+        }
+        
+        //[destinationViewController.navigationController popViewControllerAnimated:YES];
+        [destinationViewController.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+}
+
+// https://stackoverflow.com/questions/1214965/setting-action-for-back-button-in-navigation-controller
+-(void) viewWillDisappear:(BOOL)animated {
+    if ([self.navigationController.viewControllers indexOfObject:self]==NSNotFound) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
+    [super viewWillDisappear:animated];
 }
 
 @end

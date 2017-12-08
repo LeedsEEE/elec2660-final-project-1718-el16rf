@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // https://stackoverflow.com/questions/9239067/how-to-hide-a-navigation-bar-from-one-particular-view-controller
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
     self.data = [[DataModel alloc] init];
     
     [self.data initElectroSamples];
@@ -34,11 +37,6 @@
     if ([[segue identifier] isEqualToString:@"SelectSampleStyle"]) {
         [self didPressStop:nil];
     }
-}
-
-// https://stackoverflow.com/questions/12509422/how-to-perform-unwind-segue-programmatically
-// https://stackoverflow.com/questions/27392203/unwind-push-segue-from-uitableviewcell-tap
-- (IBAction)unwindToMainView: (UIStoryboardSegue *)unwindSegue {
 }
 
 - (IBAction)didPressPlay:(id)sender {
