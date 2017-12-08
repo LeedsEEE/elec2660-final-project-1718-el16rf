@@ -539,48 +539,48 @@
         button.selected = YES;
         button.alpha = 0.5;
         // https://stackoverflow.com/questions/3330378/cocoa-touch-how-to-change-uiviews-border-color-and-thickness
-        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
-        button.layer.borderWidth = 1.0;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackTwoButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
-        button.layer.borderWidth = 1.0;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackThreeButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
-        button.layer.borderWidth = 1.0;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackFourButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
-        button.layer.borderWidth = 1.0;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackFiveButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
-        button.layer.borderWidth = 1.0;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
     
     for (UIButton *button in self.trackSixButtons) {
         button.selected = YES;
         button.alpha = 0.5;
-        button.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
-        button.layer.borderWidth = 1.0;
+        button.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
+        button.layer.borderWidth = 2.0;
         button.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
     }
 }
@@ -588,33 +588,33 @@
 - (void) initControlStyle {
     NSLog(@"control style initialised");
     
-    self.playButton.layer.borderWidth = 1.0;
+    self.playButton.layer.borderWidth = 2.0;
     self.playButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.playButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.playButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
     
-    self.pauseButton.layer.borderWidth = 1.0;
+    self.pauseButton.layer.borderWidth = 2.0;
     self.pauseButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.pauseButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.pauseButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
     
-    self.stopButton.layer.borderWidth = 1.0;
+    self.stopButton.layer.borderWidth = 2.0;
     self.stopButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.stopButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.stopButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
     
-    self.clearButton.layer.borderWidth = 1.0;
+    self.clearButton.layer.borderWidth = 2.0;
     self.clearButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.clearButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.clearButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
     
-    self.decrementButton.layer.borderWidth = 1.0;
+    self.decrementButton.layer.borderWidth = 2.0;
     self.decrementButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.decrementButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.decrementButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
     
-    self.incrementButton.layer.borderWidth = 1.0;
+    self.incrementButton.layer.borderWidth = 2.0;
     self.incrementButton.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.incrementButton.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.incrementButton.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
     
-    self.BPMLabel.layer.borderWidth = 1.0;
+    self.BPMLabel.layer.borderWidth = 2.0;
     self.BPMLabel.layer.borderColor = [UIColor colorWithRed:0.14 green:0.15 blue:0.16 alpha:1.0].CGColor;
-    self.BPMLabel.layer.backgroundColor = [UIColor colorWithRed:0.71 green:0.71 blue:0.71 alpha:1.0].CGColor;
+    self.BPMLabel.layer.backgroundColor = [UIColor colorWithRed:0.60 green:0.67 blue:0.71 alpha:1.0].CGColor;
 }
 
 - (void) clearAll {
