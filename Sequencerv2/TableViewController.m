@@ -51,9 +51,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SampleStyleCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
-    self.cell = cell;
-    
     if (indexPath.section == 0) {
         SampleStyle *tempSampleStyle = [self.data.samples objectAtIndex:indexPath.row];
         
@@ -100,12 +97,13 @@
 
 #pragma mark - Navigation
 
-/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UITableViewCell *)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    ViewController *vc1 = (ViewController *)segue.destinationViewController;
+    NSIndexPath *selectedPath = [self.tableView indexPathForCell:sender];
 }
-*/
 
 @end

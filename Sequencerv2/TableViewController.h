@@ -9,11 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "DataModel.h"
 #import "SampleStyle.h"
+#import "ViewController.h"
 
 @interface TableViewController : UITableViewController
 
 @property (strong, nonatomic) DataModel *data;
-
-@property UITableViewCell *cell;
 
 @end

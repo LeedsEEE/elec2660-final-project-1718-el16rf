@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F066A641FD59679008A8C25 /* electro_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A631FD59679008A8C25 /* electro_kick.wav */; };
-		9F066A661FD596EA008A8C25 /* electro_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A651FD596EA008A8C25 /* electro_snare.wav */; };
-		9F066A691FD59757008A8C25 /* electro_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A681FD59757008A8C25 /* electro_clap.wav */; };
-		9F066A6B1FD59775008A8C25 /* electro_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A6A1FD59775008A8C25 /* electro_closedhat.wav */; };
-		9F066A6D1FD59785008A8C25 /* electro_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A6C1FD59785008A8C25 /* electro_openhat.wav */; };
-		9F066A6F1FD59833008A8C25 /* electro_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A6E1FD59833008A8C25 /* electro_crash.wav */; };
-		9F066A711FD59E1C008A8C25 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F066A701FD59E1C008A8C25 /* background.png */; };
 		9F1BF8C41FD5EF5C00BBD675 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1BF8C31FD5EF5C00BBD675 /* AVFoundation.framework */; };
 		9F25BCD61FD72AE80067D82E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F25BCD51FD72AE80067D82E /* TableViewController.m */; };
 		9F5D422F1FC743E80028C4DC /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D422E1FC743E80028C4DC /* DataModel.m */; };
@@ -25,31 +18,46 @@
 		9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9422F81FC49B7100CDC201 /* LaunchScreen.storyboard */; };
 		9F9423051FC49B7100CDC201 /* Sequencerv2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9423041FC49B7100CDC201 /* Sequencerv2Tests.m */; };
 		9F9423101FC49B7100CDC201 /* Sequencerv2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */; };
-		9FB328441FD9BD83007B4123 /* dubstep_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328431FD9BD83007B4123 /* dubstep_clap.wav */; };
-		9FB328461FD9BD8F007B4123 /* dubstep_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328451FD9BD8F007B4123 /* dubstep_crash.wav */; };
-		9FB328481FD9BD9F007B4123 /* dubstep_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328471FD9BD9F007B4123 /* dubstep_closedhat.wav */; };
-		9FB3284A1FD9BDB4007B4123 /* dubstep_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328491FD9BDB4007B4123 /* dubstep_kick.wav */; };
-		9FB3284C1FD9BDC2007B4123 /* dubstep_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3284B1FD9BDC2007B4123 /* dubstep_openhat.wav */; };
-		9FB3284E1FD9BDE7007B4123 /* dubstep_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3284D1FD9BDE7007B4123 /* dubstep_snare.wav */; };
-		9FB328501FD9BE09007B4123 /* hiphop_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3284F1FD9BE09007B4123 /* hiphop_kick.wav */; };
-		9FB328521FD9BE10007B4123 /* hiphop_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328511FD9BE10007B4123 /* hiphop_crash.wav */; };
-		9FB328571FD9BE17007B4123 /* hiphop_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328531FD9BE17007B4123 /* hiphop_clap.wav */; };
-		9FB328581FD9BE17007B4123 /* hiphop_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328541FD9BE17007B4123 /* hiphop_closedhat.wav */; };
-		9FB328591FD9BE17007B4123 /* hiphop_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328551FD9BE17007B4123 /* hiphop_openhat.wav */; };
-		9FB3285A1FD9BE17007B4123 /* hiphop_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328561FD9BE17007B4123 /* hiphop_snare.wav */; };
-		9FB328671FD9BEDC007B4123 /* drumandbass_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328611FD9BEDC007B4123 /* drumandbass_closedhat.wav */; };
-		9FB328681FD9BEDC007B4123 /* drumandbass_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328621FD9BEDC007B4123 /* drumandbass_openhat.wav */; };
-		9FB328691FD9BEDC007B4123 /* drumandbass_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328631FD9BEDC007B4123 /* drumandbass_clap.wav */; };
-		9FB3286A1FD9BEDC007B4123 /* drumandbass_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328641FD9BEDC007B4123 /* drumandbass_kick.wav */; };
-		9FB3286B1FD9BEDC007B4123 /* drumandbass_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328651FD9BEDC007B4123 /* drumandbass_snare.wav */; };
-		9FB3286C1FD9BEDC007B4123 /* drumandbass_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FB328661FD9BEDC007B4123 /* drumandbass_crash.wav */; };
-		9FD1B2771FD874C0004D91CA /* SampleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD1B2761FD874C0004D91CA /* SampleStyle.m */; };
-		9FF4A7C41FD725110022F69F /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C31FD725110022F69F /* clear.png */; };
-		9FF4A7C61FD725200022F69F /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C51FD725200022F69F /* play.png */; };
-		9FF4A7C81FD725290022F69F /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C71FD725290022F69F /* decrement.png */; };
-		9FF4A7CA1FD725430022F69F /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7C91FD725430022F69F /* pause.png */; };
-		9FF4A7CC1FD7256B0022F69F /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7CB1FD7256B0022F69F /* stop.png */; };
-		9FF4A7CE1FD7257C0022F69F /* increment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF4A7CD1FD7257C0022F69F /* increment.png */; };
+		9FC79EEF1FDA969A0011D335 /* SampleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FC79EEE1FDA969A0011D335 /* SampleStyle.m */; };
+		9FC79EF61FDA96D80011D335 /* drumandbass_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EF01FDA96D80011D335 /* drumandbass_clap.wav */; };
+		9FC79EF71FDA96D80011D335 /* drumandbass_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EF11FDA96D80011D335 /* drumandbass_closedhat.wav */; };
+		9FC79EF81FDA96D80011D335 /* drumandbass_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EF21FDA96D80011D335 /* drumandbass_crash.wav */; };
+		9FC79EF91FDA96D80011D335 /* drumandbass_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EF31FDA96D80011D335 /* drumandbass_kick.wav */; };
+		9FC79EFA1FDA96D80011D335 /* drumandbass_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EF41FDA96D80011D335 /* drumandbass_openhat.wav */; };
+		9FC79EFB1FDA96D80011D335 /* drumandbass_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EF51FDA96D80011D335 /* drumandbass_snare.wav */; };
+		9FC79F021FDA96E90011D335 /* electro_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EFC1FDA96E90011D335 /* electro_clap.wav */; };
+		9FC79F031FDA96E90011D335 /* electro_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EFD1FDA96E90011D335 /* electro_closedhat.wav */; };
+		9FC79F041FDA96E90011D335 /* electro_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EFE1FDA96E90011D335 /* electro_crash.wav */; };
+		9FC79F051FDA96E90011D335 /* electro_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79EFF1FDA96E90011D335 /* electro_kick.wav */; };
+		9FC79F061FDA96E90011D335 /* electro_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F001FDA96E90011D335 /* electro_openhat.wav */; };
+		9FC79F071FDA96E90011D335 /* electro_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F011FDA96E90011D335 /* electro_snare.wav */; };
+		9FC79F141FDA96FC0011D335 /* dubstep_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F0E1FDA96FC0011D335 /* dubstep_clap.wav */; };
+		9FC79F151FDA96FC0011D335 /* dubstep_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F0F1FDA96FC0011D335 /* dubstep_closedhat.wav */; };
+		9FC79F161FDA96FC0011D335 /* dubstep_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F101FDA96FC0011D335 /* dubstep_crash.wav */; };
+		9FC79F171FDA96FC0011D335 /* dubstep_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F111FDA96FC0011D335 /* dubstep_kick.wav */; };
+		9FC79F181FDA96FC0011D335 /* dubstep_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F121FDA96FC0011D335 /* dubstep_openhat.wav */; };
+		9FC79F191FDA96FC0011D335 /* dubstep_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F131FDA96FC0011D335 /* dubstep_snare.wav */; };
+		9FC79F201FDA97080011D335 /* hiphop_clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F1A1FDA97080011D335 /* hiphop_clap.wav */; };
+		9FC79F211FDA97080011D335 /* hiphop_closedhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F1B1FDA97080011D335 /* hiphop_closedhat.wav */; };
+		9FC79F221FDA97080011D335 /* hiphop_crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F1C1FDA97080011D335 /* hiphop_crash.wav */; };
+		9FC79F231FDA97080011D335 /* hiphop_kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F1D1FDA97080011D335 /* hiphop_kick.wav */; };
+		9FC79F241FDA97080011D335 /* hiphop_openhat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F1E1FDA97080011D335 /* hiphop_openhat.wav */; };
+		9FC79F251FDA97080011D335 /* hiphop_snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F1F1FDA97080011D335 /* hiphop_snare.wav */; };
+		9FC79F351FDA972E0011D335 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F261FDA972E0011D335 /* background.png */; };
+		9FC79F361FDA972E0011D335 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F271FDA972E0011D335 /* clear.png */; };
+		9FC79F371FDA972E0011D335 /* decrement.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F281FDA972E0011D335 /* decrement.png */; };
+		9FC79F381FDA972E0011D335 /* increment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F291FDA972E0011D335 /* increment.png */; };
+		9FC79F391FDA972E0011D335 /* nslogic app icon black glyph.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2A1FDA972E0011D335 /* nslogic app icon black glyph.png */; };
+		9FC79F3A1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2B1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png */; };
+		9FC79F3B1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2C1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png */; };
+		9FC79F3C1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2D1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png */; };
+		9FC79F3D1FDA972E0011D335 /* nslogic app icon with drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2E1FDA972E0011D335 /* nslogic app icon with drop shadow.png */; };
+		9FC79F3E1FDA972E0011D335 /* nslogic app icon without drop shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F2F1FDA972E0011D335 /* nslogic app icon without drop shadow.png */; };
+		9FC79F3F1FDA972E0011D335 /* nslogic launchscreen transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F301FDA972E0011D335 /* nslogic launchscreen transparent.png */; };
+		9FC79F401FDA972E0011D335 /* nslogic launchscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F311FDA972E0011D335 /* nslogic launchscreen.png */; };
+		9FC79F411FDA972E0011D335 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F321FDA972E0011D335 /* pause.png */; };
+		9FC79F421FDA972E0011D335 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F331FDA972E0011D335 /* play.png */; };
+		9FC79F431FDA972E0011D335 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FC79F341FDA972E0011D335 /* stop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,13 +78,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9F066A631FD59679008A8C25 /* electro_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_kick.wav; sourceTree = "<group>"; };
-		9F066A651FD596EA008A8C25 /* electro_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_snare.wav; sourceTree = "<group>"; };
-		9F066A681FD59757008A8C25 /* electro_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_clap.wav; sourceTree = "<group>"; };
-		9F066A6A1FD59775008A8C25 /* electro_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_closedhat.wav; sourceTree = "<group>"; };
-		9F066A6C1FD59785008A8C25 /* electro_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_openhat.wav; sourceTree = "<group>"; };
-		9F066A6E1FD59833008A8C25 /* electro_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = electro_crash.wav; sourceTree = "<group>"; };
-		9F066A701FD59E1C008A8C25 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		9F1BF8C31FD5EF5C00BBD675 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9F25BCD41FD72AE80067D82E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		9F25BCD51FD72AE80067D82E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
@@ -98,38 +99,53 @@
 		9F94230B1FC49B7100CDC201 /* Sequencerv2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Sequencerv2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F94230F1FC49B7100CDC201 /* Sequencerv2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sequencerv2UITests.m; sourceTree = "<group>"; };
 		9F9423111FC49B7100CDC201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FB328431FD9BD83007B4123 /* dubstep_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dubstep_clap.wav; sourceTree = "<group>"; };
-		9FB328451FD9BD8F007B4123 /* dubstep_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dubstep_crash.wav; sourceTree = "<group>"; };
-		9FB328471FD9BD9F007B4123 /* dubstep_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dubstep_closedhat.wav; sourceTree = "<group>"; };
-		9FB328491FD9BDB4007B4123 /* dubstep_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dubstep_kick.wav; sourceTree = "<group>"; };
-		9FB3284B1FD9BDC2007B4123 /* dubstep_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dubstep_openhat.wav; sourceTree = "<group>"; };
-		9FB3284D1FD9BDE7007B4123 /* dubstep_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dubstep_snare.wav; sourceTree = "<group>"; };
-		9FB3284F1FD9BE09007B4123 /* hiphop_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop_kick.wav; sourceTree = "<group>"; };
-		9FB328511FD9BE10007B4123 /* hiphop_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop_crash.wav; sourceTree = "<group>"; };
-		9FB328531FD9BE17007B4123 /* hiphop_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop_clap.wav; sourceTree = "<group>"; };
-		9FB328541FD9BE17007B4123 /* hiphop_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop_closedhat.wav; sourceTree = "<group>"; };
-		9FB328551FD9BE17007B4123 /* hiphop_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop_openhat.wav; sourceTree = "<group>"; };
-		9FB328561FD9BE17007B4123 /* hiphop_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiphop_snare.wav; sourceTree = "<group>"; };
-		9FB3285B1FD9BE91007B4123 /* futurebass_clap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurebass_clap.aif; sourceTree = "<group>"; };
-		9FB3285C1FD9BE91007B4123 /* futurebass_crash.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurebass_crash.aif; sourceTree = "<group>"; };
-		9FB3285D1FD9BE91007B4123 /* futurebass_closedhat.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurebass_closedhat.aif; sourceTree = "<group>"; };
-		9FB3285E1FD9BE91007B4123 /* futurebass_openhat.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurebass_openhat.aif; sourceTree = "<group>"; };
-		9FB3285F1FD9BE91007B4123 /* futurebass_kick.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurebass_kick.aif; sourceTree = "<group>"; };
-		9FB328601FD9BE91007B4123 /* futurebass_snare.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = futurebass_snare.aif; sourceTree = "<group>"; };
-		9FB328611FD9BEDC007B4123 /* drumandbass_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumandbass_closedhat.wav; sourceTree = "<group>"; };
-		9FB328621FD9BEDC007B4123 /* drumandbass_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumandbass_openhat.wav; sourceTree = "<group>"; };
-		9FB328631FD9BEDC007B4123 /* drumandbass_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumandbass_clap.wav; sourceTree = "<group>"; };
-		9FB328641FD9BEDC007B4123 /* drumandbass_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumandbass_kick.wav; sourceTree = "<group>"; };
-		9FB328651FD9BEDC007B4123 /* drumandbass_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumandbass_snare.wav; sourceTree = "<group>"; };
-		9FB328661FD9BEDC007B4123 /* drumandbass_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumandbass_crash.wav; sourceTree = "<group>"; };
-		9FD1B2751FD874C0004D91CA /* SampleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleStyle.h; path = ../SampleStyle.h; sourceTree = "<group>"; };
-		9FD1B2761FD874C0004D91CA /* SampleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleStyle.m; path = ../SampleStyle.m; sourceTree = "<group>"; };
-		9FF4A7C31FD725110022F69F /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clear.png; sourceTree = "<group>"; };
-		9FF4A7C51FD725200022F69F /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
-		9FF4A7C71FD725290022F69F /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decrement.png; sourceTree = "<group>"; };
-		9FF4A7C91FD725430022F69F /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
-		9FF4A7CB1FD7256B0022F69F /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
-		9FF4A7CD1FD7257C0022F69F /* increment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = increment.png; sourceTree = "<group>"; };
+		9FC79EED1FDA96910011D335 /* SampleStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleStyle.h; sourceTree = "<group>"; };
+		9FC79EEE1FDA969A0011D335 /* SampleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleStyle.m; sourceTree = "<group>"; };
+		9FC79EF01FDA96D80011D335 /* drumandbass_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drumandbass_clap.wav; path = "Media/Samples/Danny Byrd/drumandbass_clap.wav"; sourceTree = "<group>"; };
+		9FC79EF11FDA96D80011D335 /* drumandbass_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drumandbass_closedhat.wav; path = "Media/Samples/Danny Byrd/drumandbass_closedhat.wav"; sourceTree = "<group>"; };
+		9FC79EF21FDA96D80011D335 /* drumandbass_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drumandbass_crash.wav; path = "Media/Samples/Danny Byrd/drumandbass_crash.wav"; sourceTree = "<group>"; };
+		9FC79EF31FDA96D80011D335 /* drumandbass_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drumandbass_kick.wav; path = "Media/Samples/Danny Byrd/drumandbass_kick.wav"; sourceTree = "<group>"; };
+		9FC79EF41FDA96D80011D335 /* drumandbass_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drumandbass_openhat.wav; path = "Media/Samples/Danny Byrd/drumandbass_openhat.wav"; sourceTree = "<group>"; };
+		9FC79EF51FDA96D80011D335 /* drumandbass_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drumandbass_snare.wav; path = "Media/Samples/Danny Byrd/drumandbass_snare.wav"; sourceTree = "<group>"; };
+		9FC79EFC1FDA96E90011D335 /* electro_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = electro_clap.wav; path = Media/Samples/iZotope/electro_clap.wav; sourceTree = "<group>"; };
+		9FC79EFD1FDA96E90011D335 /* electro_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = electro_closedhat.wav; path = Media/Samples/iZotope/electro_closedhat.wav; sourceTree = "<group>"; };
+		9FC79EFE1FDA96E90011D335 /* electro_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = electro_crash.wav; path = Media/Samples/iZotope/electro_crash.wav; sourceTree = "<group>"; };
+		9FC79EFF1FDA96E90011D335 /* electro_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = electro_kick.wav; path = Media/Samples/iZotope/electro_kick.wav; sourceTree = "<group>"; };
+		9FC79F001FDA96E90011D335 /* electro_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = electro_openhat.wav; path = Media/Samples/iZotope/electro_openhat.wav; sourceTree = "<group>"; };
+		9FC79F011FDA96E90011D335 /* electro_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = electro_snare.wav; path = Media/Samples/iZotope/electro_snare.wav; sourceTree = "<group>"; };
+		9FC79F081FDA96F30011D335 /* futurebass_clap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = futurebass_clap.aif; path = Media/Samples/KSHMR/futurebass_clap.aif; sourceTree = "<group>"; };
+		9FC79F091FDA96F30011D335 /* futurebass_closedhat.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = futurebass_closedhat.aif; path = Media/Samples/KSHMR/futurebass_closedhat.aif; sourceTree = "<group>"; };
+		9FC79F0A1FDA96F30011D335 /* futurebass_crash.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = futurebass_crash.aif; path = Media/Samples/KSHMR/futurebass_crash.aif; sourceTree = "<group>"; };
+		9FC79F0B1FDA96F30011D335 /* futurebass_kick.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = futurebass_kick.aif; path = Media/Samples/KSHMR/futurebass_kick.aif; sourceTree = "<group>"; };
+		9FC79F0C1FDA96F30011D335 /* futurebass_openhat.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = futurebass_openhat.aif; path = Media/Samples/KSHMR/futurebass_openhat.aif; sourceTree = "<group>"; };
+		9FC79F0D1FDA96F30011D335 /* futurebass_snare.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = futurebass_snare.aif; path = Media/Samples/KSHMR/futurebass_snare.aif; sourceTree = "<group>"; };
+		9FC79F0E1FDA96FC0011D335 /* dubstep_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dubstep_clap.wav; path = Media/Samples/Leviathan/dubstep_clap.wav; sourceTree = "<group>"; };
+		9FC79F0F1FDA96FC0011D335 /* dubstep_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dubstep_closedhat.wav; path = Media/Samples/Leviathan/dubstep_closedhat.wav; sourceTree = "<group>"; };
+		9FC79F101FDA96FC0011D335 /* dubstep_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dubstep_crash.wav; path = Media/Samples/Leviathan/dubstep_crash.wav; sourceTree = "<group>"; };
+		9FC79F111FDA96FC0011D335 /* dubstep_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dubstep_kick.wav; path = Media/Samples/Leviathan/dubstep_kick.wav; sourceTree = "<group>"; };
+		9FC79F121FDA96FC0011D335 /* dubstep_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dubstep_openhat.wav; path = Media/Samples/Leviathan/dubstep_openhat.wav; sourceTree = "<group>"; };
+		9FC79F131FDA96FC0011D335 /* dubstep_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dubstep_snare.wav; path = Media/Samples/Leviathan/dubstep_snare.wav; sourceTree = "<group>"; };
+		9FC79F1A1FDA97080011D335 /* hiphop_clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiphop_clap.wav; path = "Media/Samples/Noir Sound/hiphop_clap.wav"; sourceTree = "<group>"; };
+		9FC79F1B1FDA97080011D335 /* hiphop_closedhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiphop_closedhat.wav; path = "Media/Samples/Noir Sound/hiphop_closedhat.wav"; sourceTree = "<group>"; };
+		9FC79F1C1FDA97080011D335 /* hiphop_crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiphop_crash.wav; path = "Media/Samples/Noir Sound/hiphop_crash.wav"; sourceTree = "<group>"; };
+		9FC79F1D1FDA97080011D335 /* hiphop_kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiphop_kick.wav; path = "Media/Samples/Noir Sound/hiphop_kick.wav"; sourceTree = "<group>"; };
+		9FC79F1E1FDA97080011D335 /* hiphop_openhat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiphop_openhat.wav; path = "Media/Samples/Noir Sound/hiphop_openhat.wav"; sourceTree = "<group>"; };
+		9FC79F1F1FDA97080011D335 /* hiphop_snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hiphop_snare.wav; path = "Media/Samples/Noir Sound/hiphop_snare.wav"; sourceTree = "<group>"; };
+		9FC79F261FDA972E0011D335 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Media/Images/background.png; sourceTree = "<group>"; };
+		9FC79F271FDA972E0011D335 /* clear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clear.png; path = Media/Images/clear.png; sourceTree = "<group>"; };
+		9FC79F281FDA972E0011D335 /* decrement.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = decrement.png; path = Media/Images/decrement.png; sourceTree = "<group>"; };
+		9FC79F291FDA972E0011D335 /* increment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = increment.png; path = Media/Images/increment.png; sourceTree = "<group>"; };
+		9FC79F2A1FDA972E0011D335 /* nslogic app icon black glyph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon black glyph.png"; path = "Media/Images/nslogic app icon black glyph.png"; sourceTree = "<group>"; };
+		9FC79F2B1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent with drop shadow.png"; path = "Media/Images/nslogic app icon transparent with drop shadow.png"; sourceTree = "<group>"; };
+		9FC79F2C1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon transparent without drop shadow.png"; path = "Media/Images/nslogic app icon transparent without drop shadow.png"; sourceTree = "<group>"; };
+		9FC79F2D1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon white glyph on colour example.png"; path = "Media/Images/nslogic app icon white glyph on colour example.png"; sourceTree = "<group>"; };
+		9FC79F2E1FDA972E0011D335 /* nslogic app icon with drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon with drop shadow.png"; path = "Media/Images/nslogic app icon with drop shadow.png"; sourceTree = "<group>"; };
+		9FC79F2F1FDA972E0011D335 /* nslogic app icon without drop shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic app icon without drop shadow.png"; path = "Media/Images/nslogic app icon without drop shadow.png"; sourceTree = "<group>"; };
+		9FC79F301FDA972E0011D335 /* nslogic launchscreen transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic launchscreen transparent.png"; path = "Media/Images/nslogic launchscreen transparent.png"; sourceTree = "<group>"; };
+		9FC79F311FDA972E0011D335 /* nslogic launchscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "nslogic launchscreen.png"; path = "Media/Images/nslogic launchscreen.png"; sourceTree = "<group>"; };
+		9FC79F321FDA972E0011D335 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Media/Images/pause.png; sourceTree = "<group>"; };
+		9FC79F331FDA972E0011D335 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Media/Images/play.png; sourceTree = "<group>"; };
+		9FC79F341FDA972E0011D335 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = Media/Images/stop.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +177,12 @@
 		9F066A671FD59706008A8C25 /* iZotope */ = {
 			isa = PBXGroup;
 			children = (
-				9F066A651FD596EA008A8C25 /* electro_snare.wav */,
-				9F066A631FD59679008A8C25 /* electro_kick.wav */,
-				9F066A681FD59757008A8C25 /* electro_clap.wav */,
-				9F066A6A1FD59775008A8C25 /* electro_closedhat.wav */,
-				9F066A6C1FD59785008A8C25 /* electro_openhat.wav */,
-				9F066A6E1FD59833008A8C25 /* electro_crash.wav */,
+				9FC79EFC1FDA96E90011D335 /* electro_clap.wav */,
+				9FC79EFD1FDA96E90011D335 /* electro_closedhat.wav */,
+				9FC79EFE1FDA96E90011D335 /* electro_crash.wav */,
+				9FC79EFF1FDA96E90011D335 /* electro_kick.wav */,
+				9FC79F001FDA96E90011D335 /* electro_openhat.wav */,
+				9FC79F011FDA96E90011D335 /* electro_snare.wav */,
 			);
 			name = iZotope;
 			sourceTree = "<group>";
@@ -216,8 +232,8 @@
 				9F9422EE1FC49B7100CDC201 /* AppDelegate.m */,
 				9F5D422D1FC743E80028C4DC /* DataModel.h */,
 				9F5D422E1FC743E80028C4DC /* DataModel.m */,
-				9FD1B2751FD874C0004D91CA /* SampleStyle.h */,
-				9FD1B2761FD874C0004D91CA /* SampleStyle.m */,
+				9FC79EED1FDA96910011D335 /* SampleStyle.h */,
+				9FC79EEE1FDA969A0011D335 /* SampleStyle.m */,
 				9F25BCD41FD72AE80067D82E /* TableViewController.h */,
 				9F25BCD51FD72AE80067D82E /* TableViewController.m */,
 				9F9422F01FC49B7100CDC201 /* ViewController.h */,
@@ -261,12 +277,12 @@
 		9FB3283E1FD9BD43007B4123 /* KSHMR */ = {
 			isa = PBXGroup;
 			children = (
-				9FB3285B1FD9BE91007B4123 /* futurebass_clap.aif */,
-				9FB3285C1FD9BE91007B4123 /* futurebass_crash.aif */,
-				9FB3285D1FD9BE91007B4123 /* futurebass_closedhat.aif */,
-				9FB3285E1FD9BE91007B4123 /* futurebass_openhat.aif */,
-				9FB3285F1FD9BE91007B4123 /* futurebass_kick.aif */,
-				9FB328601FD9BE91007B4123 /* futurebass_snare.aif */,
+				9FC79F081FDA96F30011D335 /* futurebass_clap.aif */,
+				9FC79F091FDA96F30011D335 /* futurebass_closedhat.aif */,
+				9FC79F0A1FDA96F30011D335 /* futurebass_crash.aif */,
+				9FC79F0B1FDA96F30011D335 /* futurebass_kick.aif */,
+				9FC79F0C1FDA96F30011D335 /* futurebass_openhat.aif */,
+				9FC79F0D1FDA96F30011D335 /* futurebass_snare.aif */,
 			);
 			name = KSHMR;
 			sourceTree = "<group>";
@@ -274,12 +290,12 @@
 		9FB3283F1FD9BD45007B4123 /* Noir Sound */ = {
 			isa = PBXGroup;
 			children = (
-				9FB3284F1FD9BE09007B4123 /* hiphop_kick.wav */,
-				9FB328511FD9BE10007B4123 /* hiphop_crash.wav */,
-				9FB328531FD9BE17007B4123 /* hiphop_clap.wav */,
-				9FB328541FD9BE17007B4123 /* hiphop_closedhat.wav */,
-				9FB328551FD9BE17007B4123 /* hiphop_openhat.wav */,
-				9FB328561FD9BE17007B4123 /* hiphop_snare.wav */,
+				9FC79F1A1FDA97080011D335 /* hiphop_clap.wav */,
+				9FC79F1B1FDA97080011D335 /* hiphop_closedhat.wav */,
+				9FC79F1C1FDA97080011D335 /* hiphop_crash.wav */,
+				9FC79F1D1FDA97080011D335 /* hiphop_kick.wav */,
+				9FC79F1E1FDA97080011D335 /* hiphop_openhat.wav */,
+				9FC79F1F1FDA97080011D335 /* hiphop_snare.wav */,
 			);
 			name = "Noir Sound";
 			sourceTree = "<group>";
@@ -287,12 +303,12 @@
 		9FB328401FD9BD48007B4123 /* Leviathan */ = {
 			isa = PBXGroup;
 			children = (
-				9FB3284D1FD9BDE7007B4123 /* dubstep_snare.wav */,
-				9FB328431FD9BD83007B4123 /* dubstep_clap.wav */,
-				9FB328451FD9BD8F007B4123 /* dubstep_crash.wav */,
-				9FB328471FD9BD9F007B4123 /* dubstep_closedhat.wav */,
-				9FB328491FD9BDB4007B4123 /* dubstep_kick.wav */,
-				9FB3284B1FD9BDC2007B4123 /* dubstep_openhat.wav */,
+				9FC79F0E1FDA96FC0011D335 /* dubstep_clap.wav */,
+				9FC79F0F1FDA96FC0011D335 /* dubstep_closedhat.wav */,
+				9FC79F101FDA96FC0011D335 /* dubstep_crash.wav */,
+				9FC79F111FDA96FC0011D335 /* dubstep_kick.wav */,
+				9FC79F121FDA96FC0011D335 /* dubstep_openhat.wav */,
+				9FC79F131FDA96FC0011D335 /* dubstep_snare.wav */,
 			);
 			name = Leviathan;
 			sourceTree = "<group>";
@@ -300,12 +316,12 @@
 		9FB328411FD9BD4A007B4123 /* Danny Byrd */ = {
 			isa = PBXGroup;
 			children = (
-				9FB328611FD9BEDC007B4123 /* drumandbass_closedhat.wav */,
-				9FB328621FD9BEDC007B4123 /* drumandbass_openhat.wav */,
-				9FB328631FD9BEDC007B4123 /* drumandbass_clap.wav */,
-				9FB328641FD9BEDC007B4123 /* drumandbass_kick.wav */,
-				9FB328651FD9BEDC007B4123 /* drumandbass_snare.wav */,
-				9FB328661FD9BEDC007B4123 /* drumandbass_crash.wav */,
+				9FC79EF01FDA96D80011D335 /* drumandbass_clap.wav */,
+				9FC79EF11FDA96D80011D335 /* drumandbass_closedhat.wav */,
+				9FC79EF21FDA96D80011D335 /* drumandbass_crash.wav */,
+				9FC79EF31FDA96D80011D335 /* drumandbass_kick.wav */,
+				9FC79EF41FDA96D80011D335 /* drumandbass_openhat.wav */,
+				9FC79EF51FDA96D80011D335 /* drumandbass_snare.wav */,
 			);
 			name = "Danny Byrd";
 			sourceTree = "<group>";
@@ -325,13 +341,21 @@
 		9FB607261FD5B700009A7B63 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				9FF4A7C31FD725110022F69F /* clear.png */,
-				9FF4A7C91FD725430022F69F /* pause.png */,
-				9FF4A7CD1FD7257C0022F69F /* increment.png */,
-				9FF4A7CB1FD7256B0022F69F /* stop.png */,
-				9FF4A7C71FD725290022F69F /* decrement.png */,
-				9FF4A7C51FD725200022F69F /* play.png */,
-				9F066A701FD59E1C008A8C25 /* background.png */,
+				9FC79F261FDA972E0011D335 /* background.png */,
+				9FC79F271FDA972E0011D335 /* clear.png */,
+				9FC79F281FDA972E0011D335 /* decrement.png */,
+				9FC79F291FDA972E0011D335 /* increment.png */,
+				9FC79F2A1FDA972E0011D335 /* nslogic app icon black glyph.png */,
+				9FC79F2B1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png */,
+				9FC79F2C1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png */,
+				9FC79F2D1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png */,
+				9FC79F2E1FDA972E0011D335 /* nslogic app icon with drop shadow.png */,
+				9FC79F2F1FDA972E0011D335 /* nslogic app icon without drop shadow.png */,
+				9FC79F301FDA972E0011D335 /* nslogic launchscreen transparent.png */,
+				9FC79F311FDA972E0011D335 /* nslogic launchscreen.png */,
+				9FC79F321FDA972E0011D335 /* pause.png */,
+				9FC79F331FDA972E0011D335 /* play.png */,
+				9FC79F341FDA972E0011D335 /* stop.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -442,40 +466,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB328681FD9BEDC007B4123 /* drumandbass_openhat.wav in Resources */,
+				9FC79F3E1FDA972E0011D335 /* nslogic app icon without drop shadow.png in Resources */,
 				9F9422FA1FC49B7100CDC201 /* LaunchScreen.storyboard in Resources */,
-				9FB3286C1FD9BEDC007B4123 /* drumandbass_crash.wav in Resources */,
-				9F066A711FD59E1C008A8C25 /* background.png in Resources */,
-				9F066A6B1FD59775008A8C25 /* electro_closedhat.wav in Resources */,
-				9FB328461FD9BD8F007B4123 /* dubstep_crash.wav in Resources */,
-				9FF4A7CE1FD7257C0022F69F /* increment.png in Resources */,
-				9FF4A7C41FD725110022F69F /* clear.png in Resources */,
-				9FF4A7C81FD725290022F69F /* decrement.png in Resources */,
-				9F066A691FD59757008A8C25 /* electro_clap.wav in Resources */,
-				9FB328581FD9BE17007B4123 /* hiphop_closedhat.wav in Resources */,
-				9F066A641FD59679008A8C25 /* electro_kick.wav in Resources */,
+				9FC79F411FDA972E0011D335 /* pause.png in Resources */,
+				9FC79F061FDA96E90011D335 /* electro_openhat.wav in Resources */,
+				9FC79F171FDA96FC0011D335 /* dubstep_kick.wav in Resources */,
+				9FC79F141FDA96FC0011D335 /* dubstep_clap.wav in Resources */,
+				9FC79F221FDA97080011D335 /* hiphop_crash.wav in Resources */,
+				9FC79F181FDA96FC0011D335 /* dubstep_openhat.wav in Resources */,
+				9FC79F241FDA97080011D335 /* hiphop_openhat.wav in Resources */,
+				9FC79F021FDA96E90011D335 /* electro_clap.wav in Resources */,
+				9FC79EF91FDA96D80011D335 /* drumandbass_kick.wav in Resources */,
+				9FC79F351FDA972E0011D335 /* background.png in Resources */,
+				9FC79F3C1FDA972E0011D335 /* nslogic app icon white glyph on colour example.png in Resources */,
+				9FC79F041FDA96E90011D335 /* electro_crash.wav in Resources */,
+				9FC79F3F1FDA972E0011D335 /* nslogic launchscreen transparent.png in Resources */,
+				9FC79F3B1FDA972E0011D335 /* nslogic app icon transparent without drop shadow.png in Resources */,
+				9FC79EF81FDA96D80011D335 /* drumandbass_crash.wav in Resources */,
+				9FC79F431FDA972E0011D335 /* stop.png in Resources */,
 				9F9422F71FC49B7100CDC201 /* Assets.xcassets in Resources */,
-				9F066A6D1FD59785008A8C25 /* electro_openhat.wav in Resources */,
-				9FB328591FD9BE17007B4123 /* hiphop_openhat.wav in Resources */,
-				9FB328521FD9BE10007B4123 /* hiphop_crash.wav in Resources */,
-				9FB3284E1FD9BDE7007B4123 /* dubstep_snare.wav in Resources */,
-				9FB3286B1FD9BEDC007B4123 /* drumandbass_snare.wav in Resources */,
-				9F066A6F1FD59833008A8C25 /* electro_crash.wav in Resources */,
-				9FF4A7CA1FD725430022F69F /* pause.png in Resources */,
-				9FF4A7CC1FD7256B0022F69F /* stop.png in Resources */,
-				9FF4A7C61FD725200022F69F /* play.png in Resources */,
+				9FC79EF71FDA96D80011D335 /* drumandbass_closedhat.wav in Resources */,
+				9FC79EFA1FDA96D80011D335 /* drumandbass_openhat.wav in Resources */,
 				9F9422F51FC49B7100CDC201 /* Main.storyboard in Resources */,
-				9FB328671FD9BEDC007B4123 /* drumandbass_closedhat.wav in Resources */,
-				9FB3285A1FD9BE17007B4123 /* hiphop_snare.wav in Resources */,
-				9FB3284A1FD9BDB4007B4123 /* dubstep_kick.wav in Resources */,
-				9FB328441FD9BD83007B4123 /* dubstep_clap.wav in Resources */,
-				9FB3284C1FD9BDC2007B4123 /* dubstep_openhat.wav in Resources */,
-				9FB328571FD9BE17007B4123 /* hiphop_clap.wav in Resources */,
-				9F066A661FD596EA008A8C25 /* electro_snare.wav in Resources */,
-				9FB328481FD9BD9F007B4123 /* dubstep_closedhat.wav in Resources */,
-				9FB328691FD9BEDC007B4123 /* drumandbass_clap.wav in Resources */,
-				9FB328501FD9BE09007B4123 /* hiphop_kick.wav in Resources */,
-				9FB3286A1FD9BEDC007B4123 /* drumandbass_kick.wav in Resources */,
+				9FC79F381FDA972E0011D335 /* increment.png in Resources */,
+				9FC79EF61FDA96D80011D335 /* drumandbass_clap.wav in Resources */,
+				9FC79F031FDA96E90011D335 /* electro_closedhat.wav in Resources */,
+				9FC79F071FDA96E90011D335 /* electro_snare.wav in Resources */,
+				9FC79EFB1FDA96D80011D335 /* drumandbass_snare.wav in Resources */,
+				9FC79F251FDA97080011D335 /* hiphop_snare.wav in Resources */,
+				9FC79F401FDA972E0011D335 /* nslogic launchscreen.png in Resources */,
+				9FC79F3A1FDA972E0011D335 /* nslogic app icon transparent with drop shadow.png in Resources */,
+				9FC79F051FDA96E90011D335 /* electro_kick.wav in Resources */,
+				9FC79F231FDA97080011D335 /* hiphop_kick.wav in Resources */,
+				9FC79F371FDA972E0011D335 /* decrement.png in Resources */,
+				9FC79F3D1FDA972E0011D335 /* nslogic app icon with drop shadow.png in Resources */,
+				9FC79F211FDA97080011D335 /* hiphop_closedhat.wav in Resources */,
+				9FC79F391FDA972E0011D335 /* nslogic app icon black glyph.png in Resources */,
+				9FC79F161FDA96FC0011D335 /* dubstep_crash.wav in Resources */,
+				9FC79F361FDA972E0011D335 /* clear.png in Resources */,
+				9FC79F421FDA972E0011D335 /* play.png in Resources */,
+				9FC79F191FDA96FC0011D335 /* dubstep_snare.wav in Resources */,
+				9FC79F201FDA97080011D335 /* hiphop_clap.wav in Resources */,
+				9FC79F151FDA96FC0011D335 /* dubstep_closedhat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +537,7 @@
 				9F9422EF1FC49B7100CDC201 /* AppDelegate.m in Sources */,
 				9F25BCD61FD72AE80067D82E /* TableViewController.m in Sources */,
 				9F9422EC1FC49B7100CDC201 /* main.m in Sources */,
-				9FD1B2771FD874C0004D91CA /* SampleStyle.m in Sources */,
+				9FC79EEF1FDA969A0011D335 /* SampleStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

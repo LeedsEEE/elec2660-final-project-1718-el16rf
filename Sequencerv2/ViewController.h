@@ -31,7 +31,6 @@
 
 // Object definitions
 @property DataModel *data;
-@property TableViewController *tableView;
 
 @property BOOL *electroSelected;
 @property BOOL *dubstepSelected;
