@@ -38,7 +38,7 @@
 
 // number of rows in table view
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSInteger numberOfRows;
+    NSInteger numberOfRows = 0;
     if (section == 0) {
         numberOfRows = self.data.samples.count;
     }
