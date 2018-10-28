@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  NSLogic
+//
+//  Created by Reuben Frankel on 28/10/2018.
+//  Copyright © 2018 University of Leeds. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// https://littlefox.es/remove-nslog-from-production
+#ifndef DEBUG
+#define NSLog(...) /* replace NSLog method with nothing/blank */
+#endif
+
+#endif /* PrefixHeader_pch */
