@@ -1,6 +1,6 @@
 //
-//  Sequencerv2UITests.m
-//  Sequencerv2UITests
+//  NSLogicUITests.m
+//  NSLogicUITests
 //
 //  Created by Reuben Frankel [el16rf] on 21/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Sequencerv2UITests : XCTestCase
+@interface NSLogicUITests : XCTestCase
 
 @end
 
-@implementation Sequencerv2UITests
+@implementation NSLogicUITests
 
 - (void)setUp {
     [super setUp];

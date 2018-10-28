@@ -1,6 +1,6 @@
 //
 //  DataModel.m
-//  Sequencerv2
+//  NSLogic
 //
 //  Created by Reuben Frankel [el16rf] on 23/11/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.

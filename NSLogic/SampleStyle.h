@@ -1,6 +1,6 @@
 //
 //  SampleStyle.h
-//  Sequencerv2
+//  NSLogic
 //
 //  Created by Reuben Frankel [el16rf] on 06/12/2017.
 //  Copyright © 2017 University of Leeds. All rights reserved.
